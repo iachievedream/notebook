@@ -1,3 +1,5 @@
+Andriod Studio:
+下載處(尚未設定)
 terminal:
 <table>
   <tr>
@@ -56,6 +58,8 @@ terminal:
     <th>使用說明</th>
    </tr>
 </table>
+
+~~~
 往上一層目錄移動
 $ cd ..
 切換到使用者的 home 目錄中的 project 裡的 namecards 目錄
@@ -67,3 +71,4 @@ $ cp index.html about.html
 $ mv index.html info.html
 刪除檔案 index.html：
 $ rm index.html
+~~~
