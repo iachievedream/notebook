@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOTshellrunas]
+@=管理員取得所有權
+NoWorkingDirectory=
+[HKEY_CLASSES_ROOTshellrunascommand]
+@=cmd.exe c takeown f %1 && icacls %1 grant administratorsF
+IsolatedCommand=cmd.exe c takeown f %1 && icacls %1 grant administratorsF
+[HKEY_CLASSES_ROOTexefileshellrunas2]
+@=管理員取得所有權
+NoWorkingDirectory=
+[HKEY_CLASSES_ROOTexefileshellrunas2command]
+@=cmd.exe c takeown f %1 && icacls %1 grant administratorsF
+IsolatedCommand=cmd.exe c takeown f %1 && icacls %1 grant administratorsF
+[HKEY_CLASSES_ROOTDirectoryshellrunas]
+@=管理員取得所有權
+NoWorkingDirectory=
+[HKEY_CLASSES_ROOTDirectoryshellrunascommand]
+@=cmd.exe c takeown f %1 r d y && icacls %1 grant administratorsF t
+IsolatedCommand=cmd.exe c takeown f %1 r d y && icacls %1 grant administratorsF t
