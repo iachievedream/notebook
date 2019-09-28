@@ -1,5 +1,5 @@
-Andriod Studio:
-下載處(尚未設定)
+Andriod Studio:<br>
+下載處(尚未設定)<br>
 terminal:
 <table>
   <tr>
