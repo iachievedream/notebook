@@ -7,7 +7,6 @@ MainActivity.java<br>
 package com.example.mystock;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Button EarnButton;     //按鍵
     private TextView TotalPrice;        //顯示地方
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         });
         TotalPrice = (TextView) findViewById(R.id.C2);  //B3回傳至A3顯示螢幕
     }
-
     private String TotalPrice(){
         double Ans = 0;
         double C1 = Double.valueOf(BuyTotalPrice.getText().toString());  //讀取B2至C2
@@ -80,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
         Ans = C2-C1;
         return String.valueOf(Ans);
     }
-
     private String BuyHandlingFee(){
         double Ans = 0;
         double C1 = Double.valueOf(BuyNumber.getText().toString());  //讀取B2至C2
@@ -96,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
         Ans = C1 * C2*1000+C3;
         return String.valueOf(Ans);
     }
-
     private String SellHandlingFee(){
         double Ans = 0;
         double C1 = Double.valueOf(SellNumber.getText().toString());  //讀取B2至C2
@@ -368,6 +363,4 @@ activity_main.xml，<br>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ~~~~
-<br>
-<br>
 2019 09 27

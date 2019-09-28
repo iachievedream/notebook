@@ -4,7 +4,6 @@ MainActivity.java
 package com.example.sum;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -42,10 +41,8 @@ public class MainActivity extends AppCompatActivity {
         double C2 = Double.valueOf(B2.getText().toString());  //讀取B2至C2
         Ans = C1 * C2;
         return String.valueOf(Ans);
-
     }
 }
-
 ~~~~
 activity_main.xml，<br>
 上表用拉的拉出來的
