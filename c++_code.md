@@ -1,6 +1,3 @@
-c++ of code
-===
-
 Input radius,and to Calculate with area and perimeter.
 ---
 ~~~
@@ -29,7 +26,6 @@ return 0;
 ~~~
 ellipse perimeter
 ---
-
 ~~~
 #include <iostream>                                        //輸出入的工具箱
 #include <cmath>                                           //數學函數工具箱
@@ -50,7 +46,6 @@ int main()                                                 // 主程式開頭處
 }
 ~~~
 改良版，a&b=0即停止(兩數中有數值0即停止)，採用function and while loop。
-
 ~~~
 #include <iostream>
 #include <cmath>
@@ -83,18 +78,15 @@ float perimeter(int a,int b)                 //Function definition
     return 0;
 }
 ~~~
-
 fstream
 ---
-
-C++與檔案處理相關
-須先函入fstream標頭，
-ifstream物件處理檔案輸入，
-ofstream物件處理檔案輸出，
-
-建立串流物件之後，
-可以使用open()函式來連結串流，
-
+C++與檔案處理相關<br>
+須先函入fstream標頭，<br>
+ifstream物件處理檔案輸入，<br>
+ofstream物件處理檔案輸出，<br>
+<br>
+建立串流物件之後，<br>
+可以使用open()函式來連結串流，<br>
 ~~~
 #include <iostream>
 #include <fstream>
@@ -175,13 +167,9 @@ int main(){
     return 0;
 }
 ~~~
-
-備註:
-
-iomanip：setprecision(2)>>0.00
-
-iomanip：setw(10)>>「  」
-
+備註:<br><br>
+iomanip：setprecision(2)>>0.00<br>
+iomanip：setw(10)>>「  」<br>
 ~~~
  // setw example
  #include <iostream>     // std::cout, std::endl

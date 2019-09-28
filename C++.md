@@ -1,16 +1,4 @@
-# c++
-
-## onlone IDE website：
-1.tutorialspoint IDE:
-https://www.tutorialspoint.com/online_cpp_compiler.php
-
-2.onlinegdb IDE:
-https://www.onlinegdb.com/online_c++_compiler
-
-## C++自學程式筆記
-
-第一章 使用軟體：Dev-C++、Code::Blocks、Eclipse
-
+第一章 使用軟體：Dev-C++、Code::Blocks、Eclipse<br>
 Hello!我的第一支C++程式
 ~~~
 #include <iostream>
@@ -45,17 +33,17 @@ Hello!我的第一支C++程式
 第三章 流程控制結構
 3-1 流程控制結構簡介
 
-3-2 選擇結構：
- ~~~
+3-2 選擇結構(一)：
+~~~
 if(a>0)
 {}
 else if(a>1)
 {}
 else //(a<=0)
 {}
- ~~~
-
- ~~~
+~~~
+(二)
+~~~
 switch(a/10) 
 case1 10
 {}
@@ -68,21 +56,21 @@ default //其他60分以下
 ~~~
 while
 do-while
- ~~~
+~~~
 第四章 陣列與字串
 4-1 陣列簡介
- ~~~
+~~~
 int name[3];//宣告三個陣列
 name[0];
 name[1];
 name[2];
- ~~~
+~~~
 4-2 字串
- ~~~
+~~~
 string name[2];//宣告兩個字串
 name[0];
 name[1];
- ~~~
+~~~
 4-3本章綜合範例－氣泡排序法
 
 第五章 函數

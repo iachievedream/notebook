@@ -1,19 +1,11 @@
-Selenium with Python
-
-
-https://selenium-python.readthedocs.io/
-
-在Windows上安裝Python & Selenium + 簡易教學
-https://medium.com/@NorthBei/%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%9Dpython-selenium-%E7%B0%A1%E6%98%93%E6%95%99%E5%AD%B8-eade1cd2d12d'
-安裝：pip install selenium
-
-
-如何在 R 中透過 RSelenium 模組使用 Selenium 自動操控瀏覽器，下載並擷取網頁中的資料。
-
-https://blog.gtwang.org/r/rselenium-r-selenium-browser-web-scraping-tutorial/
-
+<a href="https://selenium-python.readthedocs.io/">Selenium with Python</a><br>
+<a href="https://medium.com/@NorthBei/%E5%9C%A8windows%E4%B8%8A%E5%AE%89%E8%A3%9Dpython-selenium-%E7%B0%A1%E6%98%93%E6%95%99%E5%AD%B8-eade1cd2d12d'">在Windows上安裝Python & Selenium + 簡易教學</a><br>
+<br>
+安裝：pip install selenium<br>
+<a href="https://blog.gtwang.org/r/rselenium-r-selenium-browser-web-scraping-tutorial/">如何在 R 中透過 RSelenium 模組使用 Selenium 自動操控瀏覽器，下載並擷取網頁中的資料。</a><br>
+<br>
 Python：網路爬蟲與資料分析入門實戰
-
+~~~
 Chapter 01 環境設定與網頁爬蟲初探
 1-1 環境設定及套件安裝：Anaconda
 1-2 使用IDE：PyCharm
@@ -69,9 +61,7 @@ B-1 Scrapy 環境安裝
 B-2 簡易部落格爬蟲
 B-3 Scrapy 系統架構
 B-4 博客來網路書店爬蟲
-
-
-
+~~~
 程式書籍
 ~~~
 C++ 教學手冊 洪維恩
