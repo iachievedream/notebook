@@ -1,6 +1,4 @@
 ![image](https://github.com/iachievedream/notebook/blob/master/picture/EasyAddButton.png)
-<br>
-<br>
 MainActivity.java
 ~~~~
 package com.example.sum;
@@ -49,9 +47,8 @@ public class MainActivity extends AppCompatActivity {
 }
 
 ~~~~
-<br>
 activity_main.xml，<br>
-上表用拉的拉出來的，<br>
+上表用拉的拉出來的
 ~~~~
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -144,6 +141,4 @@ activity_main.xml，<br>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 ~~~~
-<br>
-<br>
 2019 09 26

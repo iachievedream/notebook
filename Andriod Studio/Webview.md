@@ -2,10 +2,6 @@
 <br>
 <br>
 manifest/AndroidManifest.xml<br>
-<br>
-添加關鍵<br>
-    <uses-permission android:name="android.permission.INTERNET" /><br>
-        android:usesCleartextTraffic="true"
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,9 +28,7 @@ manifest/AndroidManifest.xml<br>
 
 </manifest>
 ~~~
-<br>
-<br>
-MainActivity.java<br>
+MainActivity.java
 ~~~
 package com.example.webview;
 
@@ -57,9 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ~~~
-<br>
-<br>
-Layout/activity_main.xml<br>
+Layout/activity_main.xml
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
 <!--重拉樣板-->
@@ -69,9 +61,7 @@ Layout/activity_main.xml<br>
     android:layout_height="match_parent">
 </WebView>
 ~~~
-<br>
-<br>
-res/values/styles.xml<br>
+res/values/styles.xml
 ~~~
 <resources>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"><!-- 全屏 -->
@@ -83,6 +73,4 @@ res/values/styles.xml<br>
     </style>
 </resources>
 ~~~
-<br>
-<br>
 2019 09 28

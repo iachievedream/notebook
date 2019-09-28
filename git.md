@@ -15,7 +15,7 @@ git commit -m "first commit"
 git commit -a -m "update content"
 上傳至github:
 ~~~
-https://github.com/iachievedream/notebook.git
+git remote add origin https://github.com/iachievedream/noteb
 git push -u origin master
 ~~~
 cat分支上傳至github
