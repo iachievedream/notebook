@@ -1,4 +1,4 @@
-![image](https://github.com/iachievedream/EveryNote/blob/master/2019%2009%2027Stock.png)
+![image](https://github.com/iachievedream/notebook/blob/master/picture/Stock.png)
 <br>
 <br>
 MainActivity.java<br>
