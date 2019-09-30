@@ -41,7 +41,8 @@ public class VariablesAndStrings {                             //須與class相�
 >注：print沒換行，println有換行。打印格式為「"學生年齡: "+ageOfStudent」，加號輸入。
 
 <br>
-次方計算，檔名：PowerCalculation.java
+次方計算，檔名：PowerCalculation.java<br>
+
 ~~~
 package first;
 public class PowerCalculation {                  
