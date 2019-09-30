@@ -5,7 +5,7 @@ cmd：<br>
 <br>
 套件：first<br>
 類別：HelloWorld.java<br>
->注:package與class須依套件與類別的名稱更動。
+>注：package與class須依套件與類別的名稱更動。
 
 <br>
 第一個java程式，顯示Hello World。<br>
@@ -19,10 +19,10 @@ public class HelloWorld{                       // 宣告類別名稱，與檔名
 }
 ~~~
 變數與字串列印<br>
-檔名：first1.java<br>
+檔名：VariablesAndStrings.java<br>
 ~~~
 package first;                                    //須與專案相同名稱
-public class first1 {                             //須與class相同名稱
+public class VariablesAndStrings {                             //須與class相同名稱
     public static void main(String[] args) {      //主程式開頭
         int ageOfStudent = 18;                    //宣告int並指定值
         char sexOfStudent = 'M';                  //宣告char並指定字串
@@ -33,14 +33,12 @@ public class first1 {                             //須與class相同名稱
 
         ageOfStudent = 20;                        //另設變數數值
         System.out.println("學生年齡: "+ageOfStudent);
+        System.out.println("學生姓別: "+sexOfStudent);
     }
 }
 ~~~
->注:print沒換行，println有換行。打印格式為「"學生年齡: "+ageOfStudent」，加號輸入。
-
-<br>
+>注：print沒換行，println有換行。打印格式為「"學生年齡: "+ageOfStudent」，加號輸入。
 次方計算，檔名：PowerCalculation.java
-
 ~~~
 package first;
 public class PowerCalculation {                  
@@ -54,29 +52,39 @@ public class PowerCalculation {
 }
 ~~~
 物件與類別：
+
+<br>
+類別：Dog<br>
+-屬性：name，age<br>
+-方法：printInfo<br>
+物件：myDog<--類別：Dog
+
 ~~~
+package first;
+
+import java.util.Scanner;
 class Dog {
 	String name;
-	int age;
-	//屬性(attributes)
+	int age;                                                  //屬性(attributes)
 	void printInfo() {
-		System.out.println("狗名字是 : " + name);
-		System.out.println("狗年齡是 : " + age);
-		//方法(method)
+		System.out.println("狗名字是:"+name+"狗年齡是:"+age);	  //方法(method)
 	}
 }
-public class body {
+public class first {
 	public static void main(String[] args) {
-		Dog myDog = new Dog();		// 宣告與建立myDog物件		
-		java.util.Scanner dogsomething = new java.util.Scanner(System.in);
-		System.out.println("Please input name.");
-		myDog.name = dogsomething.next();
+		Dog myDog = new Dog();		                          // 宣告與建立myDog物件		
+		java.util.Scanner DogName = new java.util.Scanner(System.in);
+		
+		System.out.print("Please input name.");
+		myDog.name = DogName.next();
 		System.out.println("Please input age.");
-		myDog.age = dogsomething.nextInt();
-		myDog.printInfo();
+		myDog.age = DogName.nextInt();
+		myDog.printInfo();	                          //呼叫函數printInfo
 	}
 }
-******************************************************
+~~~
+>注：print沒換行，println有換行。打印格式為「"狗名字是:"+name+"狗年齡是:"+age」，加號輸入。
+~~~
 package first;
 class first2 {
 	public static void main(String[] args) {
