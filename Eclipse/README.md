@@ -38,6 +38,8 @@ public class VariablesAndStrings {                             //須與class相�
 }
 ~~~
 >注：print沒換行，println有換行。打印格式為「"學生年齡: "+ageOfStudent」，加號輸入。
+
+<br>
 次方計算，檔名：PowerCalculation.java
 ~~~
 package first;
@@ -52,7 +54,6 @@ public class PowerCalculation {
 }
 ~~~
 物件與類別：
-
 <br>
 類別：Dog<br>
 -屬性：name，age<br>
@@ -70,7 +71,7 @@ class Dog {
 		System.out.println("狗名字是:"+name+"狗年齡是:"+age);	  //方法(method)
 	}
 }
-public class first {
+public class DogName {
 	public static void main(String[] args) {
 		Dog myDog = new Dog();		                          // 宣告與建立myDog物件		
 		java.util.Scanner DogName = new java.util.Scanner(System.in);
@@ -84,62 +85,42 @@ public class first {
 }
 ~~~
 >注：print沒換行，println有換行。打印格式為「"狗名字是:"+name+"狗年齡是:"+age」，加號輸入。
+
+class內容合在一起
 ~~~
 package first;
-class first2 {
-	public static void main(String[] args) {
-		C c1,c2;					//類別產生一個物件為c1
-		c1 =new C();				//宣告物件c1
-		c2 =new C();
-
-		System.out.println("new.i = "+c1.i);
-		System.out.println("new.i = "+c2.i);
-
-		c1.i =5;
-		System.out.println("new.i = "+c1.i);
-		System.out.println("new.i = "+c2.i);
-		}
-	}
-class C {
-	int i=100;
-}
-*****************************************
-class內容合在一起
-
 class Ccar {                      //汽車類別
-   private double gas, tbo;       //宣告最多載油量, 平均耗油量
-   private double max_dist = 0;   //加滿油可行駛最長距離
+	   private double gas, tbo,max_dist = 0;   //宣告最多載油量, 平均耗油量,加滿油可行駛最長距離
+	   private void MaxDist() {       //計算可行駛最長距離
+	      max_dist = gas * tbo;
+	   }
+	   public void SetValue(double g, double t) { //傳入資料
+	      gas = g;
+	      tbo = t;
+	      MaxDist();
+	   }
+	   public double GetDist() {      //傳出資料
+	      return max_dist;
+	   }
+	}
+	public class CarDistance {       //主類別
+	   public static void main(String[] args) {   //主程式
+	      Ccar car1;                              //宣告car1物件
+	      car1 = new Ccar();                      //建立car1物件
+		  double g1 = 40.7, t1 = 13.6;
+		  car1.SetValue(g1, t1);                  //設定car1物件的屬性值
+		  double distance = car1.GetDist();      //取得car1物件的方法傳回值
+		  System.out.println("car1加滿油可行駛 "+distance+" km");
 
-   private void MaxDist() {       //計算可行駛最長距離
-      max_dist = gas * tbo;
-   }
-   public void SetValue(double g, double t) { //傳入資料
-      gas = g;
-      tbo = t;
-      MaxDist();
-   }
-
-   public double GetDist() {      //傳出資料
-      return max_dist;
-   }
-}
-public class first1 {       //主類別
-   public static void main(String[] args) {   //主程式
-      Ccar car1;                              //宣告car1物件
-      car1 = new Ccar();                      //建立car1物件
-	  double g1 = 40.7, t1 = 13.6;
-	  car1.SetValue(g1, t1);                  //設定car1物件的屬性值
-	  double distance1 = car1.GetDist();      //取得car1物件的方法傳回值
-	  Ccar car2 = new Ccar();                 //宣告並建立car2物件
-	  car2.SetValue(60, 9.5);                 //設定car1物件的屬性值
-	  System.out.println("car1加滿油可行駛 " + distance1 + " km");
-	  System.out.println("car2加滿油可行駛 " + car2.GetDist() + " km");
-   }
-}
-
-*****************************************
+		  Ccar car2 = new Ccar();                 //宣告並建立car2物件
+		  car2.SetValue(60, 9.5);                 //設定car1物件的屬性值
+		  System.out.println("car2加滿油可行駛 "+car2.GetDist()+"km");
+	   }
+	}
+~~~
+>注：Ccar car1;car1 = new Ccar();宣告物件，建立物件===Ccar car1 = new Ccar();同時宣告建立物件
 class檔案分開
-*****************************************
+~~~
 Ccar.java
 package first;
 public class Ccar {                    //汽車類別
