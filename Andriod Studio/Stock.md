@@ -1,4 +1,4 @@
-![image](https://github.com/iachievedream/notebook/blob/master/picture/Stock.png)
+![image](https://github.com/iachievedream/notebook/blob/master/picture/AndriodStudioStock.png)
 <br>
 <br>
 MainActivity.java<br>

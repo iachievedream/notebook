@@ -1,4 +1,4 @@
-![image](https://github.com/iachievedream/notebook/blob/master/picture/Webview.png)
+![image](https://github.com/iachievedream/notebook/blob/master/picture/AndriodStudioWebview.png)
 <br>
 <br>
 manifest/AndroidManifest.xml<br>

@@ -1,4 +1,4 @@
-![image](https://github.com/iachievedream/notebook/blob/master/picture/EasyAddButton.png)
+![image](https://github.com/iachievedream/notebook/blob/master/picture/AndriodStudioEasyAddButton.png)
 MainActivity.java
 ~~~~
 package com.example.sum;
