@@ -1,65 +1,24 @@
-# java-note
-
-使用軟體：Eclipse，Java
-
-<a href="https://www.pcsetting.com/devtools/80?page=0%2C0">Eclipse教學</a>
-
-cmd：編譯：javac HelloWorld。執行：java HelloWorld
-
-環境變數：
-新增 > 變數名稱(N): CLASSPATH
-		變數值(V): .;C:\Program Files (x86)\Java\jdk1.7.0_51\lib;C:\Program Files (x86)\Java\jdk1.7.0_51\lib\tools.jar;
-
-新增 > 變數名稱(N): JAVA_HOME
-		變數值(V): C:\Program Files (x86)\Java\jdk1.7.0_51
-
-新增 > 變數名稱(N): PATH
-		變數值(V): %JAVA_HOME%\bin;
-
-編輯系統變數>>PATH>>C:\Program Files\Java\jdk1.8.0_181\bin
-
-cmd input：java -version
-~~~
-package first;                                         //專案(java Project)
-public class first1 {                                  //class類別的檔案，需與檔名相同
-	public static void main(String[] args) {       //主程式內容
-		// TODO Auto-generated method stub     /
-	}
-}
-**************************
-建立：java Project
-Project name：first
->>finish
-***
-package Explorer(左側欄位)
-first 檔名按右鍵(Right click)
-New>>class
-Name：first1
-勾選：public static void main(String[] args) {
-完成java編譯環境
-
-資料架構：
-Project：first
->>class：first1
->>class：first2
-
-復原Eclipse版面配置：Window -> Reset Perspective
-Eclipse顯示程式碼行數：
-Windows > Preferences > General > Editors >
-Text Editors > show line numbers
-
-
-~~~
-第一個java程式，檔名：HelloWorld.java
+使用Eclipse編譯環境，需先安裝Java<br>
+<a href="https://www.pcsetting.com/devtools/80?page=0%2C0">Eclipse教學</a><br>
+cmd：<br>
+編譯：javac HelloWorld。<br>
+執行：java HelloWorld<br>
+<br>
+套件：first
+類別：HelloWorld.java<br>
+>注:package與class須依套件與類別的名稱更動。
+<br>
+第一個java程式，顯示Hello World。<br>
 ~~~
 package first;                                 //須與專案相同名稱
 public class HelloWorld{                       // 宣告類別名稱，與檔名相同
-    public static void main(String []args){   // 宣告 main() 方法
-       System.out.println("Hello World");     // 於命令列印出訊息
+    public static void main(String []args){    // 宣告 main() 方法
+       System.out.println("Hello World");      // 於命令列印出訊息
     }
 }
 ~~~
-變數呈現，檔名：first1.java
+變數與字串列印<br>
+檔名：first1.java<br>
 ~~~
 package first;                                    //須與專案相同名稱
 public class first1 {                             //須與class相同名稱
@@ -67,24 +26,23 @@ public class first1 {                             //須與class相同名稱
         int ageOfStudent = 18;                    //宣告int並指定值
         char sexOfStudent = 'M';                  //宣告char並指定字串
 
-        System.out.print("學生年齡: ");            //print()方法在顯示文字後不換行
-        System.out.println(ageOfStudent);         //println()方法在顯示文字後換行
+        System.out.println("學生年齡: "+ageOfStudent);         //println()方法在顯示文字後換行
         System.out.print("學生姓別: ");
         System.out.println(sexOfStudent);         //取得變數的值
 
         ageOfStudent = 20;                        //另設變數數值
-        sexOfStudent = 'F';                       //另設變數數值
-        System.out.print("學生年齡: ");            //列印學生年齡:
-        System.out.println(ageOfStudent);         //列印ageOfStudent數值
-        System.out.print("學生姓別: ");
-        System.out.println(sexOfStudent);
+        System.out.println("學生年齡: "+ageOfStudent);
     }
 }
 ~~~
-次方計算，檔名：first1.java
+>注:print沒換行，println有換行。打印格式為「"學生年齡: "+ageOfStudent」，加號輸入。
+
+<br>
+次方計算，檔名：PowerCalculation.java
+
 ~~~
 package first;
-public class first1 {                  
+public class PowerCalculation {                  
      public static void main(String[] argv) {
         int i, sum;
         for (i = 1, sum = 0; i <= 3; i++) {
@@ -94,22 +52,6 @@ public class first1 {
     }
 }
 ~~~
-字串列印：
-~~~
-package first;
-public class first1
-{
-	public static void main(String[] args) {
-	    int spend=120;
-	    int hous=8;
-	    int total;
-	    total=spend*hous;
-		System.out.println("My mamey is "+total+" dollor");
-	}
-}
-~~~
-
-
 物件與類別：
 ~~~
 class Dog {
