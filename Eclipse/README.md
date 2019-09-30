@@ -1,14 +1,15 @@
-使用Eclipse編譯環境，需先安裝Java<br>
-<a href="https://www.pcsetting.com/devtools/80?page=0%2C0">Eclipse教學</a><br>
+使用Eclipse編譯環境，需先安裝Java，<a href="https://www.pcsetting.com/devtools/80?page=0%2C0">Eclipse教學</a><br>
 cmd：<br>
 編譯：javac HelloWorld。<br>
 執行：java HelloWorld<br>
 <br>
-套件：first
+套件：first<br>
 類別：HelloWorld.java<br>
 >注:package與class須依套件與類別的名稱更動。
+
 <br>
 第一個java程式，顯示Hello World。<br>
+
 ~~~
 package first;                                 //須與專案相同名稱
 public class HelloWorld{                       // 宣告類別名稱，與檔名相同
