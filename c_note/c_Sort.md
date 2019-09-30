@@ -1,4 +1,3 @@
-
 Bubble Sort
 Selection Sort
 Insertion Sort
@@ -7,10 +6,9 @@ Shell Sort
 Quick Sort
 Heap Sort
 Radix Sort
-
-************************************************************************************
+---
 Bubble Sort
-
+~~~
 #include<stdio.h>
 #include<stdlib.h>
 int main()                                  //主程式開頭
@@ -45,13 +43,11 @@ int main()                                  //主程式開頭
     return 0;                                   //回傳值為零
 }
 ~~~
-************************************************************************************
-
 Selection Sort
 
 
 Insertion Sort
-
+~~~
 #include<stdio.h>
 #include<stdlib.h>
 #define SIZE 8
@@ -93,7 +89,7 @@ void inser(int data[])
         data[no+1]=tmp;
     }
 }
-************************************************************************************
+~~~
 
 Shell Sort
 
@@ -101,4 +97,3 @@ Quick Sort
 Heap Sort
 Radix Sort
 
-~~~

@@ -1,5 +1,3 @@
-C-language
-
 power
 ~~~
 #include<stdio.h>
@@ -42,14 +40,11 @@ int main(void)                                  //主程式開頭
     
 }
 ~~~
-請輸入x和n                                                                                                                              
-2,3                                                                                                                                     
-pow(2.000000,0.000000)=1.000000                                                                                                         
-
-
-
+請輸入x和n<br>
+2,3<br>
+pow(2.000000,0.000000)=1.000000<br>
+<br>
 Tower of Hanoi
----
 ~~~
 #include <stdio.h>
 #include <stdlib.h>
@@ -110,6 +105,7 @@ int main() {
 } 
 
 ~~~
+>注：思考為何是這樣的公式，懂以及不懂差很多，一個小環節的觀念影響很大。
 
 input array
 ~~~
@@ -125,7 +121,8 @@ int main(int argc, const char * argv[]) {
 }
 ~~~
 
-//Array Input Exercise
+Array Input Exercise
+~~~
 #include <iostream>                   //include輸出入工具
 using namespace std;                  //std定義位址
 
@@ -141,10 +138,10 @@ int main()                             //主程式開頭
         cout << X[i] << "-" ;           //顯示陣列，中間多加一槓
    return 0;
 }
+~~~
 
-//以變數為天數的輸入數值
-
-
+以變數為天數的輸入數值
+~~~
 #include <iostream>                   //include輸出入工具
 using namespace std;                  //std定義位址
 
@@ -167,10 +164,12 @@ int main()                             //主程式開頭
     }
    return 0;
 }
+~~~
 
-//class funtion input exercise
-
-//cirvle perimeter :input redius, output perimeter
+class funtion input exercise
+<br>
+cirvle perimeter :input redius, output perimeter
+~~~
 #include <iostream>
 using namespace std;
 
@@ -181,9 +180,7 @@ class circle {                        //定義類別
 
     private:                          //私密物件
       float pi=3.14;                  //小數
-
 };
-
 float circle::perimeter() {           //使用float
     return 2*a*pi;                    //物件函數，使用回傳方式
 }
@@ -196,65 +193,59 @@ int main(void) {
     cout << endl;
     cout << c.perimeter() << endl;     //呼叫circle類別，並以perimeter物件顯示結果
     cout << endl;
-
     return 0;
 }
+~~~
 
-//class funtion input exercise money book
-
+class funtion input exercise money book
+~~~
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 
-class  money                //宣告money類別
-{
-private:                       //宣告私用資料成員
-    char moneyID[8];
-    float money_1,money_2,totle,average;
-public:                        //公用資料成員
-    void input_data()         //宣告成員函數
-{
-    cout << "**name**" << endl;
-    cin >> moneyID;
-}
-
-    void show_data()           //宣告成員函數
-{
-    cout << "money of 1："; //實作input_data函數
-    cin >> money_1;
-    cout << "money of 2：";
-    cin >> money_2;
-    totle = money_1 + money_2;
-    average = (money_1 + money_2)/2;
-    cout << "neme-money" << moneyID <<endl;
-    cout << "totle is " << totle <<"."<<endl<< "average is " << average << " dollor" << endl;
-}
+class  money{                //宣告money類別
+    private:                       //宣告私用資料成員
+        char moneyID[8];
+        float money_1,money_2,totle,average;
+    public:                        //公用資料成員
+        void input_data(){         //宣告成員函數
+            cout << "**name**" << endl;
+            cin >> moneyID;
+        }
+        void show_data(){           //宣告成員函數
+            cout << "money of 1："; //實作input_data函數
+            cin >> money_1;
+            cout << "money of 2：";
+            cin >> money_2;
+            totle = money_1 + money_2;
+            average = (money_1 + money_2)/2;
+            cout << "neme-money" << moneyID <<endl;
+            cout << "totle is " << totle <<"."<<endl<< "average is " << average << " dollor" << endl;
+        }
 };
 
-int main()
-{
+int main(){
     money book;               //宣告money類別的物件
     book.input_data();           //呼叫input_data成員函數
     book.show_data();           //呼叫input_data成員函數
 
     return 0;
 }
+~~~
 
 Q＆A
 能輸入天數，用陣列的方式去計算任意天數的總金額而平均每天花費嗎？
-
-
-//ellipse perimeter
-
+<br>
 ellipse perimeter
-OK*****************************************************
+<br>
+ellipse perimeter(OK)
+~~~
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-int main()
-{
+int main(){
     float a,b,ex,perimeter;
     const float pi=3.14159;
     cout <<"Put a,b nunber:";
@@ -265,15 +256,15 @@ int main()
     cout <<"ellipse perimeter is"<<ex<<endl;
     return 0;
 }
-***************************************************
+~~~
 
+~~~
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-int main()
-{
+int main(){
     float a,b,ex;
     const float pi=3.14159;
     cout <<"Put a,b nunber:";
@@ -283,13 +274,12 @@ int main()
     return 0;
 }
 
-int perimeter(float a,float b)
-{
+int perimeter(float a,float b){
     return perimeter=pi*(3*(a+b)-sqrt((3*a+b)*(a+3*b)));
 }
+~~~
 
-***************************************************
-
+~~~
 #include <iostream>
 #include <math.h>
 using namespace std;
@@ -318,9 +308,10 @@ int main(void) {
 
     return 0;
 }
+~~~
 
-//factorial
-
+factorial
+~~~
 #include<iostream>                   //input&output function
 using namespace std;                 //name space
 
@@ -352,16 +343,15 @@ int factorial(int x)               //函數定義
         return x*factorial(x-1);
     }
 }
+~~~
+>注意：14列的變數需與上面factorial相同
 
-
-注意：
-14列的變數需與上面factorial相同
-
+<br>
 Q&A:
-如何使用陣列表示？
+如何使用陣列表示？<br>
+Array Input Exercise
 
-
-//Array Input Exercise
+~~~
 #include <iostream>
 
 using namespace std;
@@ -379,9 +369,10 @@ int main()
 
    return 0;
 }
-
-//pointer & address no
-//Array Input Exercise
+~~~
+pointer & address no<br>
+Array Input Exercise
+~~~
 #include <iostream>                   //include輸出入工具
 
 using namespace std;                  //std定義位址
@@ -404,11 +395,10 @@ int main()                             //主程式開頭
 
    return 0;
 }
-
-
-//指標搜尋
-//尚未練習
-
+~~~
+指標搜尋<br>
+尚未練習
+~~~
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -426,3 +416,4 @@ printf("找不到%c字元",sc);
      system("PAUSE");
      return 0;
 }
+~~~

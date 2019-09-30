@@ -1,15 +1,3 @@
-Eclipse資料呈列
-~~~
-java
-Project：first
- class ：first1
- class ：first2
->>>>>>>>>>>
-標頭指令：
-package first;
-public class first1 {  
-~~~
-
 控制敘述
 數字從1連加到100
 ~~~

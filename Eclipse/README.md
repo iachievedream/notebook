@@ -58,8 +58,8 @@ public class PowerCalculation {
 物件與類別：
 <br>
 類別：Dog<br>
--屬性：name，age<br>
--方法：printInfo<br>
+├─屬性：name，age<br>
+└─方法：printInfo<br>
 物件：myDog<--類別：Dog
 
 ~~~

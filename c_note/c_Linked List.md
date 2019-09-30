@@ -1,4 +1,5 @@
-//c_Linked List
+c_Linked List
+~~~
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -50,3 +51,4 @@ int main(void)
     printf("average Math:%.2f,\naverage Eng:%.2f\n",Msum/studen_no,Esum/studen_no);
     return 0;
 }
+~~~
