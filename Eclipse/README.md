@@ -66,7 +66,7 @@ public class PowerCalculation {
 package first;
 
 import java.util.Scanner;
-class Dog {
+class Dog {                                                   //類別(class)
 	String name;
 	int age;                                                  //屬性(attributes)
 	void printInfo() {
@@ -121,10 +121,12 @@ class Ccar {                      //汽車類別
 	}
 ~~~
 >注：Ccar car1;car1 = new Ccar();宣告物件，建立物件===Ccar car1 = new Ccar();同時宣告建立物件
-class檔案分開
+
+class檔案分開<br>
+class：Ccar
 ~~~
-Ccar.java
 package first;
+
 public class Ccar {                    //汽車類別
     public double gas, tbo;            //宣告最多載油量, 平均耗油量
 	public double max_dist = 0;        //加滿油可行駛最長距離
@@ -135,9 +137,11 @@ public class Ccar {                    //汽車類別
 	    return oil * tbo;
 	}
 }
-*****************************************BuildObject
+~~~
+class：CarDistance
+~~~
 package first;
-public class first1 {                    //主類別
+public class CarDistance {                    //主類別
 	public static void main(String[] args) {  //主程式
 		Ccar car1;                            //宣告car1物件
 		car1 = new Ccar();                    //建立car1物件
@@ -157,9 +161,8 @@ public class first1 {                    //主類別
 		System.out.println("加油10L可行駛 " + distance + " km");
 	}
 }
-
-兩個內容放在一起可以，但只能有一個「public class」
 ~~~
+>兩個內容放在一起可以，但只能有一個「public class」
 
 多執行緒
 ~~~
@@ -238,3 +241,5 @@ package first;
 private static boolean grabGold() {非同步執行緒
 private synchronized static boolean grabGold() {同步執行緒
 ~~~
+
+
