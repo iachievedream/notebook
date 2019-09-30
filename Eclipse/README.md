@@ -20,6 +20,7 @@ public class HelloWorld{                       // 宣告類別名稱，與檔名
 ~~~
 變數與字串列印<br>
 檔名：VariablesAndStrings.java<br>
+
 ~~~
 package first;                                    //須與專案相同名稱
 public class VariablesAndStrings {                             //須與class相同名稱
