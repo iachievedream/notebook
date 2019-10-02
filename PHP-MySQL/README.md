@@ -11,10 +11,12 @@ password ：a1234567
 ~~~
 <br>
 建立data資料庫：
+
 ~~~
 CREATE DATABASE mydata;
 ~~~
 建立namephone資料表：
+
 ~~~
 CREATE TABLE namephone (
 	id          INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -40,6 +42,7 @@ INSERT INTO namephone (name,phone,mony) values
 SELECT * FROM namephone;
 ~~~
 指令整理：資料操作語言 ( DML ) select，insert，update，delete。
+
 ~~~
 SELECT * FROM $table WHERE (條件查詢)
 SELECT DISSTINCT * FROM $table  (不重複查詢)
@@ -60,6 +63,7 @@ SELECT name, SUM(mony) FROM namephone GROUP BY name;(計算單一人總金額)
 <br>
 範例:Accounting<br>
 建立data資料庫：
+
 ~~~
 CREATE DATABASE mydata;
 ~~~
