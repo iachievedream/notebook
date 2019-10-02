@@ -1,4 +1,5 @@
 
+~~~
 TP5  WEB部署目录（或者子目录）
 ├─application           应用目录
 │  ├─common             公共模块目录（可以更改）
@@ -47,7 +48,7 @@ TP5  WEB部署目录（或者子目录）
 ├─README.md             README 文件
 ├─think                 命令行入口文件
 
-
+~~~
 
 
 ╔═════╗
