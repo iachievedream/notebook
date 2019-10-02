@@ -59,10 +59,8 @@ SELECT name, SUM(mony) FROM namephone GROUP BY name;(計算單一人總金額)
 別名(as)：SELECT ID as number,Name as chester FROM city
 ~~~
 <br>
-<br>
 範例:Accounting<br>
 建立data資料庫：
-
 ~~~
 CREATE DATABASE mydata;
 ~~~
@@ -140,7 +138,6 @@ SHOW FULL COLUMNS FROM namephone
 
 別名(as)：SELECT ID as number,Name as chester FROM city
 ~~~
-<br>
 <br>
 SELECT id：以id為排列依據。SUM：相加畫號內的數值。AS：列入哪攔。FROM：從哪個資料表。GROUP BY：以誰為『群』分類(不重複)。
 <br>
