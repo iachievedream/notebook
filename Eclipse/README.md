@@ -164,6 +164,24 @@ public class CarDistance {                    //主類別
 ~~~
 >兩個內容放在一起可以，但只能有一個「public class」
 
+異常處理
+~~~
+package first;
+
+public class ExcepTest {
+	public static void main(String args[]) {
+		try {
+			int a[] = new int[8];
+			System.out.println("Access element three :" + a[7]);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Exception thrown  :" + e);
+		}
+		System.out.println("Out of the block");
+	}
+}
+~~~
+>顯示的a[]不可多過原先陣列，否則拋出異常訊息
+
 多執行緒
 ~~~
 package first;

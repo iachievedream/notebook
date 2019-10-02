@@ -1,3 +1,22 @@
+input array
+~~~
+package first;
+
+public class first {
+    public static void main(String[] args) {
+        int[] arr = new int[4];
+//        int[] arr = {90, 85, 55, 94, 77};
+        for(int i = 0; i < arr.length; i++) { 
+            System.out.print(arr[i] + " "); 
+            arr[i] = i; 
+        }
+        System.out.println();
+        for(int i = 0; i < arr.length; i++) 
+//            System.out.print(arr[i] + " "); 
+	        System.out.printf("arr[%d] = %d\n", i, arr[i]); 
+    }
+}
+~~~
 sort array
 ~~~
 public class sort_array {
@@ -29,7 +48,9 @@ public class sort_array {
 
 		}
 }
-***************
+~~~
+
+~~~
 public class a2 {
     public static void main(String[] args) {
 		int[] score = {5,9,100,30,29,55,10,50,100,99,20,2};			// 定義學生成績陣列
