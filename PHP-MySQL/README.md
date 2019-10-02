@@ -58,8 +58,7 @@ SELECT name, SUM(mony) FROM namephone GROUP BY name;(計算單一人總金額)
 
 別名(as)：SELECT ID as number,Name as chester FROM city
 ~~~
-<br>
-範例:Accounting<br>
+範例:Accounting
 建立data資料庫：
 ~~~
 CREATE DATABASE mydata;
