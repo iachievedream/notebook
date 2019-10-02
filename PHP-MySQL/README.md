@@ -9,7 +9,6 @@ password ：a1234567
 如需在php執行MySQL指令則外圍加上$sql=" 指令 "; 即可。
 如：   $sql="INSET INTO book(authorid,title,ISBN) VALUES(6,"abc","146434")";
 ~~~
-<br>
 建立data資料庫：
 
 ~~~
@@ -107,13 +106,10 @@ DELETE FROM Accounting  WHERE id=3;
 ~~~
 DROP TABLE Accounting ;
 ~~~
-<br>
 計算每日花費
 ~~~
 SELECT id ,SUM(breakfast+luncht+dinner+Night+traffic) AS totlemoney FROM Accounting GROUP BY id
 ~~~
-<br>
-<br>
 cmd 指令整理：
 ~~~
 輸入密碼，登入MySQL:
