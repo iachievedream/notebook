@@ -4,10 +4,20 @@
 按 ctrl+alt+T<br>
 <br>
 vi建立(開啟)a123.c檔案:<br>
-vi a123.c<br>
-<br>
-編輯:<br>
-a，i，o與r鍵
+vi a123.c
+
+~~~
+編輯:a，i，o與r鍵
+
+h: 向左一個字元
+l: 向右一個字元
+k: 向上一行
+j: 向下一行
+
+dw為編輯刪除鍵
+~~~
+
+輸入文件為:
 
 ~~~
 #include <stio.h>
@@ -17,7 +27,7 @@ printf(:a123");
 } 
 ~~~
 
-退出1u06ru6<br>
+退出<br>
 esc<br>
 <br>
 儲存<br>
@@ -32,8 +42,9 @@ gcc a123.c<br>
 執行:<br>
 ./a.out<br>
 <br>
+執行:<br>
+gcc -o a123 a123.c<br>
 <br>
-
 install apache2<br>
 
 ~~~
@@ -49,13 +60,4 @@ ls /etc/apache2
 
 ~~~
 sudo cp apache2.conf apache2org.conf
-~~~
-
-<br>
-
-~~~
-h: 向左一個字元
-l: 向右一個字元
-k: 向上一行
-j: 向下一行
 ~~~

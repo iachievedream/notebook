@@ -1,0 +1,3 @@
+@echo on
+ipconfig
+pause
