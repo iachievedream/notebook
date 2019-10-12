@@ -252,3 +252,40 @@ public class first1{
 		}
 	}
 ~~~
+
+生命靈數的計算
+~~~
+
+package first;
+
+public class BornNumber {
+     public static void main(String[] args){
+            java.util.Scanner variable = new java.util.Scanner(System.in);
+            System.out.print("輸入出生西元年月日(整數):");
+            int input = variable.nextInt();
+            int a=input % 10;
+            int b=input /10 %10;
+            int c=input /100 % 10;
+            int d=input /1000 % 10;
+            int e=input /10000 % 10;
+            int f=input /100000 % 10;
+            int g=input /1000000 % 10;
+            int h=input /10000000 % 10;
+            
+            int total=a+b+c+d+e+f+g+h;
+            System.out.print("整數輸入:" + input);
+            System.out.print("整數輸入:" + a);
+            System.out.print("整數輸入:" + b);
+            System.out.print("整數輸入:" + c);
+            System.out.print("整數輸入:" + d);
+            System.out.print("整數輸入:" + e);
+            System.out.print("整數輸入:" + f);
+            System.out.print("整數輸入:" + g);
+            System.out.print("整數輸入:" + h);
+//          System.out.print("西元:" + );
+//          System.out.print("月:" + b);
+//          System.out.print("日:" + c);
+            System.out.print("生日密碼:" + total);
+            }
+     }
+~~~

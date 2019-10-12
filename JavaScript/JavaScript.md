@@ -1,22 +1,20 @@
-<h1>script</h1>
+script 
 
 ~~~
-
 <script>
 
 
 </script>
 ~~~
 
-<h1>列出數字</h1>
+列出數字 
 
 ~~~
 var x=5;
 document.write(x + "<br>");
-
 ~~~
 
-<h1>數字相乘</h1>
+數字相乘 
 
 ~~~
 <input id="munber1">*
@@ -44,7 +42,7 @@ else
 </script>
 ~~~
 
-<h1>显示日期</h1>
+显示日期 
 
 ~~~
 <p id="inputdata">日期</p>
@@ -56,7 +54,7 @@ function displayDate(){
 </script>
 ~~~
 
-<h1>JavaScript 能够直接写入 HTML 输出流中：</h1>
+JavaScript 能够直接写入 HTML 输出流中： 
 
 ~~~
 <script>
@@ -64,7 +62,7 @@ document.write("<p>这是一个段落。</p>");
 </script>
 ~~~
 
-<h1>彈出視窗</h1>
+彈出視窗 
 
 ~~~
 
@@ -72,7 +70,7 @@ document.write("<p>这是一个段落。</p>");
 <button type="button" onclick="alert('欢迎!')">点我!</button>
 ~~~
 
-<h1>JavaScript 能改变 HTML 元素的内容。</h1>
+JavaScript 能改变 HTML 元素的内容。 
 
 ~~~
 <p id="word">change word space</p>
@@ -88,7 +86,7 @@ function changword()
 </script>
 ~~~
 
-<h1>JavaScript 能改变 HTML 元素的样式。</h1>
+JavaScript 能改变 HTML 元素的样式。 
 
 ~~~
 <p id="htmlmodel">black</p>
@@ -102,7 +100,7 @@ function changecolor()
 </script>
 ~~~
 
-<h1>你可以弹出警告框来显示数据：</h1>
+你可以弹出警告框来显示数据： 
 
 ~~~
 <script>
@@ -110,7 +108,7 @@ window.alert(5 + 6);
 </script>
 ~~~
 
-<h1>操作 HTML 元素</h1>
+操作 HTML 元素 
 
 ~~~
 <p id="demo">我的第一个段落</p>
@@ -119,7 +117,7 @@ document.getElementById("demo").innerHTML = "段落已修改。";
 </script>
 ~~~
 
-<h1>写到 HTML 文档</h1>
+写到 HTML 文档 
 
 ~~~
 <script>
@@ -127,7 +125,7 @@ document.write(Date());
 </script>
 ~~~
 
-<h1>写到控制台</h1>
+写到控制台 
 
 ~~~
 <script>
@@ -138,7 +136,7 @@ console.log("測試中"+c);
 </script>
 ~~~
 
-<h1>计算</h1>
+计算 
 
 ~~~
 <p id="Calculation"></p>
@@ -147,7 +145,7 @@ document.getElementById("Calculation").innerHTML = 5 * 10;
 </script>
 ~~~
 
-<h1>JavaScript 变量</h1>
+JavaScript 变量 
 
 ~~~
 <p id="changenumber"></p>
@@ -158,7 +156,7 @@ document.getElementById("changenumber").innerHTML = length;
 </script>
 ~~~
 
-<h1>JavaScript 变量計算</h1>
+JavaScript 变量計算 
 
 ~~~
 <p id="changeCalculation"></p>
@@ -171,7 +169,7 @@ document.getElementById("changeCalculation").innerHTML = z;
 </script>
 ~~~
 
-<h1>带有返回值的函数</h1>
+带有返回值的函数 
 
 ~~~
 <p>本例调用的函数会执行一个计算，然后返回结果：</p>
