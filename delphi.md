@@ -1,7 +1,7 @@
 installation
-![image](https://github.com/iachievedream/notebook/blob/master/picture/Delphi1.png)
-![image](https://github.com/iachievedream/notebook/blob/master/picture/Delphi2.png)
-![image](https://github.com/iachievedream/notebook/blob/master/picture/Delphi3.png)
+![image](https://github.com/iachievedream/notebook/blob/master/picture/delphi1.png)
+![image](https://github.com/iachievedream/notebook/blob/master/picture/delphi2.png)
+![image](https://github.com/iachievedream/notebook/blob/master/picture/delphi3.png)
 <br>
 project
 
