@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript note</title>
+</head>
+<body>
+
+<h1>我的第一个 JavaScript 程序</h1>
+<p id="demo">这是一个段落</p>
+<button type="button" onclick="displayDate()">显示日期</button>
+<script>
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+</script>
+
+<p>JavaScript 能够直接写入 HTML 输出流中：</p>
+<script>
+	document.write("<h1>这是一个标题</h1>");
+	document.write("<p>这是一个段落。</p>");
+</script>
+<p>您只能在 HTML 输出流中使用 <strong>document.write</strong>。如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+</p>
+<hr>
+<h1>JavaScript：对事件的反应</h1>
+<p>JavaScript 能够对事件作出反应。比如对按钮的点击：</p>
+<button type="button" onclick="alert('欢迎!')">点我!</button>
+
+
+<p>点击灯泡就可以打开或关闭这盏灯</p>
+<script>
+function changeImage()
+{
+	element=document.getElementById('myimage')
+	if (element.src.match("bulbon"))
+	{
+		element.src="/images/pic_bulboff.gif";
+	}
+	else
+	{
+		element.src="/images/pic_bulbon.gif";
+	}
+}
+</script>
+<img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif" width="100" height="180">
+
+
+
+<h1>我的第一段 JavaScript</h1>
+<p id="demo">
+JavaScript 能改变 HTML 元素的样式。
+</p>
+<script>
+function myFunction()
+{
+	x=document.getElementById("demo") // 找到元素
+	x.style.color="#ff0000";          // 改变样式
+}
+</script>
+<button type="button" onclick="myFunction()">点击这里</button>
+
+
+<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+<input id="demo" type="text">
+<script>
+function myFunction()
+{
+    var x=document.getElementById("demo").value;
+    if(x==""||isNaN(x))
+    {
+        alert("不是数字");
+    }
+}
+</script>
+<button type="button" onclick="myFunction()">点击这里</button>
+
+
+
+
+<h1>我的第一段 JavaScript</h1>
+<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+<input id="demo" type="text">
+<script>
+function myFunction()
+{
+	var x=document.getElementById("demo").value;
+	if(isNaN(x)||x.replace(/(^\s*)|(\s*$)/g,"")==""){
+		alert("不是数字");
+	}
+}
+</script>
+<button type="button" onclick="myFunction()">点击这里</button>
+	
+
+
+<p id="demo3"></p>
+<script>
+document.getElementById("demo").innerHTML = 5 * 10;
+</script>
+
+</body>
+</html>

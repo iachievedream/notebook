@@ -53,7 +53,7 @@
       }
       $Obj = new Employee('小紅豆');  
 ~~~
-
+建構函式，解構函式
 ~~~
       class Employee
       {
