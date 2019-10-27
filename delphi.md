@@ -1,4 +1,5 @@
-installation
+<a href="https://winworldpc.com/product/delphi/70">下載網址</a><br>
+installation:
 ![image](https://github.com/iachievedream/notebook/blob/master/picture/delphi1.png)
 ![image](https://github.com/iachievedream/notebook/blob/master/picture/delphi2.png)
 ![image](https://github.com/iachievedream/notebook/blob/master/picture/delphi3.png)
@@ -52,5 +53,4 @@ Label1.Caption:='Hello,FU!'
 end;
 
 end.
-
 ~~~
