@@ -472,3 +472,124 @@ end;
 end.
 
 ~~~
+
+混雜:try_Except，functure_Add，functure_Add_char
+
+~~~
+unit Unit1;            //檔案名稱
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)  //功能鍵宣告，需用視窗拉出
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var               //全域變數宣告
+  Form1: TForm1;
+    X : Integer;  //資料型態為數字
+    Y : Integer;
+    Z : Integer;
+    K : Integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  Try
+    X := StrToInt(Edit1.Text);
+    Y := StrToInt(Edit2.Text);
+    Z := StrToInt(Edit3.Text);
+    k:=X*Y+Z;
+    Label1.Caption:=IntToStr(K);
+  Except                          //錯誤(輸入字串)跳出此訊息
+      ShowMessage('Unknown error encountered');
+  end;
+end;
+
+Function Add(X, Y, Z: Integer) : Integer;  //函數以及資料型態定義
+begin
+  Result := X + Y+ Z;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  X := StrToInt(Edit1.Text);
+  Y := StrToInt(Edit2.Text);
+  Z := StrToInt(Edit3.Text);
+  K := Add(X, Y, Z);          //使用functure
+  Label2.Caption:=IntToStr(K);
+end;
+
+Function Addchar(a, b : String) : String;  //functure定義兩字串相加
+begin
+  Result := a +'_'+ b;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+var
+  A,B,total : String;
+begin
+  Try
+    A:=(Edit1.Text);
+    B:=(Edit2.Text);
+    total := Addchar(A,B);
+    Label3.Caption:=(total);
+  Except
+    ShowMessage('Unknown error encountered');
+  end;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+  i : Integer;
+  j : Integer;
+begin
+  X := StrToInt(Edit1.Text);
+  Y := StrToInt(Edit2.Text);
+  Z := StrToInt(Edit3.Text);
+  K := Add(X, Y, Z);
+  j:=K;
+  For i := X to (Y div Z) do
+    begin
+    ShowMessage('j = '+IntToStr(j));
+    //Label4.Caption:=(IntToStr(k));
+    j:=j-1;
+    end;
+end;
+
+end.
+
+~~~
+
+備註:<br>
+讀取Edit1，需用Str字串轉成Int數字型式才可計算數值:<br>
+X := StrToInt(Edit1.Text);<br>
+<br>
+顯示Label1，需用Int數字轉換成Str字串型式才可順利顯示:<br>
+Label1.Caption:=IntToStr(K);<br>
+<br>
+For迴圈需要注意變數的位置在回圈內還是迴圈外，另外指令要清楚，所以需多打begin~~~end;的動作內容。
