@@ -592,4 +592,97 @@ X := StrToInt(Edit1.Text);<br>
 顯示Label1，需用Int數字轉換成Str字串型式才可順利顯示:<br>
 Label1.Caption:=IntToStr(K);<br>
 <br>
-For迴圈需要注意變數的位置在回圈內還是迴圈外，另外指令要清楚，所以需多打begin~~~end;的動作內容。
+For迴圈需要注意變數的位置在回圈內還是迴圈外，另外指令要清楚，所以需多打begin~~~end;的動作內容。<br>
+<br>
+form1跳頁至form2<br>
+Unit1<br>
+
+~~~
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses Unit2;
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+var frm2:TForm2 ;
+begin
+  frm2:=TForm2.Create(frm2);
+  frm2.ShowModal;
+end;
+
+end.
+~~~
+Unit2
+~~~
+unit Unit2;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm2 = class(TForm)
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Button1Click(Sender: TObject);
+begin
+  self.close;
+end;
+
+end.
+~~~
+
+Project1
+~~~
+program Project1;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1},
+  Unit2 in 'Unit2.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.
+~~~
