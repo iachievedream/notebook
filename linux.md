@@ -61,3 +61,31 @@ ls /etc/apache2
 ~~~
 sudo cp apache2.conf apache2org.conf
 ~~~
+
+
+~~~
+開啟a123.c
+vi a123.c
+~~~
+#include <stio.h>
+int main(void)
+{
+printf(:a123");
+} 
+~~~
+儲存
+:w a123.c
+
+離開
+:q
+
+編譯:
+gcc a123.c
+
+執行:
+./a.out
+
+
+
+
+~~~

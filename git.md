@@ -60,3 +60,65 @@ git checkout bugFix;git merge master
 git checkout master;git merge bugFix
 ~~~
 2019 09 28 更新
+
+
+# 線上筆記
+
+
+commit
+branch
+checkout
+cherry-pick
+reset
+revert
+rebase
+merge
+
+更新:
+git commit
+
+新增parent新節點:
+git branch newImage
+更新新節點:
+git checkout newImage;git commit
+
+合併:
+git merge newImage
+
+更新合併:
+git checkout newImage;git commit
+
+
+----------
+想完成這一關，執行以下的操作：
+
+建立新的 branch，叫做 bugFix
+用 git checkout bugFix 切換到 bugFix branch
+commit 一次
+用 git checkout 切換回 master branch
+再 commit 一次
+用 git merge 將 bugFix merge 到 master
+記住，你可以用 "objective" 指令來重新顯示這個對話框！
+-----------
+git branch bugFix
+git checkout bugFix;git commit
+git checkout master;git commit
+git merge bugFix
+
+
+git rebase master
+
+git rebase bugFix
+------------
+想完成這一關，執行以下操作：
+
+建立 bugFix branch
+commit 一次
+切換回 master branch 再 commit 一次
+再次切換到 bugFix branch，接著 rebase bugFix 這個 branch 到 master branch 上
+祝你好運啦！
+------------
+git branch bugFix
+git checkout bugFix;git commit
+git checkout master;git commit
+git checkout bugFix;git rebase master

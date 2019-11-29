@@ -1,3 +1,12 @@
+git
+~~~
+cd C:\AppServ\www\notebook
+git add . 
+git commit -a -m "update content"
+git remote add origin https://github.com/iachievedream/noteb
+git push -u origin master
+~~~
+
 Andriod Studio:<br>
 下載處(尚未設定)<br>
 terminal:
