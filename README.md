@@ -1,12 +1,12 @@
-git
-~~~
-cd C:\AppServ\www\notebook
-git add . 
-git commit -a -m "update content"
-git remote add origin https://github.com/iachievedream/noteb
-git push -u origin master
-~~~
-
+安裝:<br>
+簡易編譯器:<br>
+sublime_text(Sublime Text 3.0 Build 3143 Portable 64-bit)<br>
+git分散式版本控制系統(筆記討論方便)。<br>
+<br>
+APP:AndriodStudio或Eclipse為編譯環境，JAVA程式語言<br>
+Jupyter Notebook:為完整的Python套件軟體。<br>
+web_code:前端與後段的程式筆記<br>
+<br>
 Andriod Studio:<br>
 下載處(尚未設定)<br>
 terminal:
@@ -80,4 +80,13 @@ $ cp index.html about.html
 $ mv index.html info.html
 刪除檔案 index.html：
 $ rm index.html
+~~~
+
+git
+~~~
+cd C:\AppServ\www\notebook
+git add . 
+git commit -a -m "update content"
+git remote add origin https://github.com/iachievedream/notebook
+git push -u origin master
 ~~~
