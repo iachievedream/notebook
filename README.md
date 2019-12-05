@@ -3,11 +3,11 @@
 sublime_text(Sublime Text 3.0 Build 3143 Portable 64-bit)<br>
 git分散式版本控制系統(筆記討論方便)。<br>
 <br>
-APP:AndriodStudio或Eclipse為編譯環境，JAVA程式語言<br>
-Jupyter Notebook:為完整的Python套件軟體。<br>
-web_code:前端與後段的程式筆記<br>
+APP：AndriodStudio或Eclipse為編譯環境，JAVA程式語言<br>
+Jupyter Notebook：為完整的Python套件軟體。<br>
+web_code：前端與後段的程式筆記<br>
 <br>
-Andriod Studio:<br>
+Andriod Studio：<br>
 下載處(尚未設定)<br>
 terminal:
 <table>

@@ -1,3 +1,9 @@
+<a href=""></a><br>
+<a href=""></a><br>
+<a href=""></a><br>
+
+
+
 phpMyAdmin架構(所擁有的基本資料，範例為root)：
 ~~~
 localhost：localhost
