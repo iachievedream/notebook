@@ -84,6 +84,7 @@ $ rm index.html
 
 git
 ~~~
+git clone https://github.com/iachievedream/notebook.git
 cd C:\AppServ\www\notebook
 git add . 
 git commit -a -m "update content"
