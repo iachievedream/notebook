@@ -89,3 +89,22 @@ gcc a123.c
 
 
 ~~~
+
+docker
+~~~
+sudo apt install docker.io
+~~~
+
+套件管理
+升級套件並下載安裝套件：
+sudo apt-get upgrade
+
+使用指令安裝Apache
+https://vitux.com/how-to-install-and-configure-apache-web-server-on-ubuntu/
+~~~
+sudo apt update
+sudo apt install apache2
+apache2 -version
+~~~
+
+sudo apt install yum
