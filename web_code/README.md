@@ -17,7 +17,7 @@
 # Back-end engineer
 ## PHP的appach環境:
 ~~~
-appserv-win32-8.6.0
+appserv-x64-9.3.0.exe
 下載此版本，可以直接下載windows所缺乏的軟件
 ~~~
 <a href="https://github.com/iachievedream/notebook/blob/master/web_code/PHP-MySQL/PHP_base_note.md">PHP_base_note</a><br>
