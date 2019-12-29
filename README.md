@@ -68,20 +68,6 @@ terminal:
    </tr>
 </table>
 
-~~~
-往上一層目錄移動
-$ cd ..
-切換到使用者的 home 目錄中的 project 裡的 namecards 目錄
-這個 "~" 符號表示 home 目錄
-$ cd ~/project/namecards/
-把檔案 index.html 複製一份成 about.html：
-$ cp index.html about.html
-把檔案 index.html 更名成 info.html：
-$ mv index.html info.html
-刪除檔案 index.html：
-$ rm index.html
-~~~
-
 git
 ~~~
 git clone https://github.com/iachievedream/notebook.git

@@ -34,4 +34,24 @@ appserv-x64-9.3.0.exe
 composer install
 ~~~
 
+Virtual Host 虛擬主機
+httpd.conf 
+~~~
+517 # Include conf/extra/httpd-vhosts.conf
+~~~
 
+conf/extra/httpd-vhosts.conf
+~~~
+<VirtualHost _default_:80>
+34 # DocumentRoot "${SRVROOT}/htdocs"
+# ServerName www.example.com:80
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "C:\AppServ\www\demo"
+    ServerName fuwork.fuwork.xyz
+    ErrorLog "logs/dummy-host2.example.com-error.log"
+    CustomLog "logs/dummy-host2.example.com-access.log" common
+</VirtualHost>
+~~~

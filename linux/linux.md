@@ -37,33 +37,50 @@ Linux 檔案系統架構
 
 sudo 管理者執行
 ~~~
+cd ~    //移動到家目錄
+cd ..   //移動到上一層目錄
+cd /    //移動到根目錄
+pwd     //print work directory，印出目前工作目錄
+cd test //examples 移動到目前資料夾下的 examples 資料夾：
+cd /etc //直接切換該目录
+
 ls      //列出基本資料夾資料：
 ls -la  // -l 列出詳細資料 -a 列出隱藏資料
 ls *.js // 列出為 .js 的檔案
-pwd     //print work directory，印出目前工作目錄
-cd .    //examples 移動到目前資料夾下的 examples 資料夾：
-cd ~    //移動到家目錄：~：
-cd ..   //移動到上一層目錄
-cd /    //移動到根目錄
 
-mkdir examples //make directory，創建新資料夾
-rm examples    //remove file，刪除檔案
+mkdir test //make directory，創建新資料夾
+rmdir test //刪除空的資料夾
+rm -r newdirectory //刪除內有資料的資料夾
 
-先將字串 TEST 存入 README.md 文件中
-echo "TEST" > README.md
-cp README.md
-~~~
+
+touch test.txt //创建一个文件名為test
+cp test test2 //把test複製一份成test2
 
 操作範例:
-~~~
-mkdir test
-ls
-cd test
 nano README.md
 >>>hello
 >Ctrl + X >>enter
 
+cat index.php //顯示index.php資料
+rm examples    //remove file，刪除檔案
+
+
+mv index.html test.html//把index.html 更名成test.html
+
+======
+先將字串 TEST 存入 README.md 文件中
+echo "TEST" > README.md
+cp README.md
+
+
+复制文件
+使用 touch 在根目录中创建一个文件 oldfile
+touch oldfile
+将其复制到/root/newdirectory
+cp oldfile /root/newdirectory/newfile
+
 ~~~
+
 
 編輯文字檔案
 nano：在終端機編輯文字檔案
@@ -134,6 +151,21 @@ printf(:a123");
 ~~~
 
 
+Could not mount the media/drive 'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso' (VERR_PDM_MEDIA_LOCKED).
+
+<a href="https://askubuntu.com/questions/321589/unable-to-mount-the-cd-dvd-image-on-the-machine-sandbox">Unable to mount the CD/DVD image on the machine Sandbox</a><br>
+
+~~~
+sudo mount /dev/sr0 /media/cdrom
 
 
+cd /media/
+ls
+cd 
+sudo ./VBoxLinuxAdditions.run
+sudo sh ./VBoxLinuxAdditions.run
 
+~~~
+VBoxLinuxAdditions kali
+
+VBoxClient: Failed to register support

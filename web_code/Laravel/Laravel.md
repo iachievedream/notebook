@@ -7,6 +7,7 @@ https://github.com/iachievedream/laravel
 <a href="https://www.youtube.com/watch?v=BIqXE1hXYs4">【課程錄影】Laravel 5.5 初學者教學
 </a>：<br>
 
+下載安裝
 ~~~
 cd C:\AppServ\www\test
 
