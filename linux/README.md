@@ -9,15 +9,15 @@
 <a href="#C101">Q&no_A</a><br>
 <br>
 <a href="#Complex">Linux 檔案系統架構</a><br>
-<a href="#install">安裝套件</a><br>
+<a href="#install">install</a><br>
 <a href="#Apache">Apache</a><br>
 <br>
 <br>
 <a id="C1">*</a>
-### 基本操作：sudo 管理者執行
 
-開啟Terminal(終端機):<br>
-按 ctrl+alt+T<br>
+### 基本操作：
+開啟Terminal(終端機):按 ctrl+alt+T<br>
+sudo 管理者執行<br>
 sudo passwd<br>
 
 ~~~
@@ -27,18 +27,18 @@ cd /    //移動到根目錄
 pwd     //print work directory，印出目前工作目錄
 cd test //examples 移動到目前資料夾下的 examples 資料夾：
 cd /etc //直接切換該目录
-
+==================
 ls      //列出基本資料夾資料：
 ls -la  // -l 列出詳細資料 -a 列出隱藏資料
 ls *.js // 列出為 .js 的檔案
-
+==================
 mkdir test //make directory，創建新資料夾
 rmdir test //刪除空的資料夾
 rm -r newdirectory //刪除內有資料的資料夾
-
+==================
 touch test.txt //创建一个文件名為test
 cp test test2 //把test複製一份成test2
-
+====================================
 操作範例:
 nano README.md
 >>>hello
@@ -60,15 +60,13 @@ cp README.md
 touch oldfile
 将其复制到/root/newdirectory
 cp oldfile /root/newdirectory/newfile
-
 ~~~
 <a href="#contents">contents</a>
-<br>
-<a id="C2">*</a>
-### 編輯文字檔案 
-nano：在終端機編輯文字檔案<br>
-編輯或是新增文字檔案：<br>
 
+<a id="C2">*</a>
+
+### 編輯文字檔案 
+nano：在終端機編輯或是新增文字檔：<br>
 ~~~
  $ nano README.md
 ~~~
@@ -138,7 +136,6 @@ gcc -o hello a123.c
 執行:<br>
 ~~~
 ./a.out
-
 ~~~
 <a href="#contents">contents</a>
 <br>
