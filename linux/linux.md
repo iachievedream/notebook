@@ -11,6 +11,7 @@
 <br>
 <a id="C1"></a>*
 ### 基本操作：sudo 管理者執行
+
 ~~~
 cd ~    //移動到家目錄
 cd ..   //移動到上一層目錄
@@ -59,6 +60,7 @@ cp oldfile /root/newdirectory/newfile
 ### 編輯文字檔案 
 nano：在終端機編輯文字檔案<br>
 編輯或是新增文字檔案：<br>
+
 ~~~
  $ nano README.md
 ~~~
