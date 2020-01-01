@@ -1,4 +1,4 @@
-phpMyAdmin架構(所擁有的基本資料，範例為root)：
+### phpMyAdmin架構(所擁有的基本資料，範例為root)：
 ~~~
 localhost：localhost
 usernam  ：root
@@ -9,13 +9,11 @@ password ：a1234567
 如需在php執行MySQL指令則外圍加上$sql=" 指令 "; 即可。
 如：   $sql="INSET INTO book(authorid,title,ISBN) VALUES(6,"abc","146434")";
 ~~~
-建立data資料庫：
-
+### 建立data資料庫：
 ~~~
 CREATE DATABASE mydata;
 ~~~
-建立namephone資料表：
-
+### 建立namephone資料表：
 ~~~
 CREATE TABLE namephone (
 	id          INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -40,8 +38,7 @@ INSERT INTO namephone (name,phone,mony) values
 查詢namephone資料表：(*為全部內容)
 SELECT * FROM namephone;
 ~~~
-指令整理：資料操作語言 ( DML ) select，insert，update，delete。
-
+### 指令整理：資料操作語言 ( DML ) select，insert，update，delete。
 ~~~
 SELECT * FROM $table WHERE (條件查詢)
 SELECT DISSTINCT * FROM $table  (不重複查詢)
@@ -58,6 +55,7 @@ SELECT name, SUM(mony) FROM namephone GROUP BY name;(計算單一人總金額)
 
 別名(as)：SELECT ID as number,Name as chester FROM city
 ~~~
+===
 範例:Accounting<br>
 建立data資料庫：
 ~~~
@@ -107,41 +105,3 @@ DROP TABLE Accounting ;
 ~~~
 SELECT id ,SUM(breakfast+luncht+dinner+Night+traffic) AS totlemoney FROM Accounting GROUP BY id
 ~~~
-cmd 指令整理：
-~~~
-輸入密碼，登入MySQL:
-mysql -u root -p
-
-建立一個資料庫
-create database mydata;
-
-列出所有資料庫
-SHOW DATABASES;
-
-列出目前使用的資料庫名稱
-SELECT DATABASE();
-
-切換使用資料庫 mydata
-USE mydata
-
-列出資料表
-SHOW TABLES FROM mydata [LIKE ...];
-列出詳細資料表
-SHOW TABLE STATUS
-ex.LIKE 'my%'-->列出所有資料庫名稱為 my 開頭的
-
-列出資料表的欄位
-SHOW COLUMNS FROM namephone
-列出詳細資料表的欄位
-SHOW FULL COLUMNS FROM namephone
-
-別名(as)：SELECT ID as number,Name as chester FROM city
-~~~
-<br>
-SELECT id：以id為排列依據。SUM：相加畫號內的數值。AS：列入哪攔。FROM：從哪個資料表。GROUP BY：以誰為『群』分類(不重複)。
-<br>
-id需選擇的項目不含唯一(Unique)的資料欄位，將無法執行表格的編輯/核選、編輯、複製、刪除等相關的功能。
-<br>
-相加MySQL函式指令：
-SELECT totle ,SUM(breakfast) AS totle2 FROM chester
-注：totle：unique，totle2建立在哪攔，chester從哪個表格。`totle`與totle相同執行功能。

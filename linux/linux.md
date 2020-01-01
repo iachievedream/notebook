@@ -1,7 +1,6 @@
 <a href="http://linux.vbird.org/new_linux.php">鳥哥的 Linux 私房菜</a><br>
 <br>
-https://blog.techbridge.cc/2017/12/23/linux-commnd-line-tutorial/
-Linux 檔案系統架構
+<a href="https://blog.techbridge.cc/2017/12/23/linux-commnd-line-tutorial/">Linux 檔案系統架構</a><br>
 ~~~
 /bin 主要放置一般使用者可以操作的指令，
 /sbin 放置系統管理員可以操作的指令。連結到 /usr/bin，/usr/sbin
@@ -35,7 +34,7 @@ Linux 檔案系統架構
 /srv通常是放置開發的服務（service），如：網站服務 www 等
 ~~~
 
-sudo 管理者執行
+### sudo 管理者執行
 ~~~
 cd ~    //移動到家目錄
 cd ..   //移動到上一層目錄
@@ -80,76 +79,89 @@ touch oldfile
 cp oldfile /root/newdirectory/newfile
 
 ~~~
-
-
-編輯文字檔案
-nano：在終端機編輯文字檔案
-
-編輯或是新增文字檔案：
+<br>
+### 編輯文字檔案 
+nano：在終端機編輯文字檔案<br>
+編輯或是新增文字檔案：<br>
+~~~
  $ nano README.md
-啟動編輯完後可以使用 Ctrl + X 離開，Ctrl + V 移動到上一頁，Ctrl + Y 移動到下一頁，Ctrl + W 搜尋文字內容
-
-vim需要先安裝
+~~~
+啟動編輯完後可以使用 Ctrl + X 離開，<br>
+Ctrl + V 移動到上一頁，<br>
+Ctrl + Y 移動到下一頁，<br>
+Ctrl + W 搜尋文字內容<br>
+<br>
+vim需要先安裝<br>
 ~~~
 sudo apt install vim
 ~~~
-vim：在終端機編輯文字檔案
+vim、vi：在終端機編輯文字檔案，建立(開啟)
 ~~~
-vim README.md
-~~~
-使用 i 進入編輯，esc 離開編輯模式，
-:q 不儲存離開，
-:wq 儲存離開，
-:q! 強制離開
-
-:(shift+;)
-
-
-
-
-<br>
-vi建立(開啟)a123.c檔案:<br>
+vim a123.c
 vi a123.c
-
 ~~~
-編輯:a，i，o與r鍵
-
+使用 a，i，o 進入編輯，esc 離開編輯模式，
+~~~
 h: 向左一個字元
 l: 向右一個字元
 k: 向上一行
 j: 向下一行
 
+h_j_k_l
+左下上右
+
 dw為編輯刪除鍵
-~~~
 
-輸入文件為:
+:q 不儲存離開，
+:wq 儲存離開，
+:q! 強制離開
+
+:(shift+;)
 ~~~
-#include <stio.h>
-int main(void)
+<br>
+### 操作範例：輸入文件為a123.c
+~~~
+vim a123.c
+~~~
+使用 a，i，o 進入編輯，
+~~~
+#include <stdio.h>
+int main()
 {
-printf(:a123");
-} 
-
-退出esc
-儲存:w a123.c
-離開:q
-編譯:gcc a123.c
-執行:./a.out
-執行:gcc -o a123 a123.c
-後面輸入密碼
+   printf("Hello, World!");
+   return 0;
+}
 ~~~
+esc 離開編輯模式，<br><br>
+儲存為a123.c<br>
+:w a123.c<br><br>
+離開<br>
+:q<br><br>
+編譯:<br>
+gcc a123.c<br>
+gcc -o hello a123.c<br>
+執行:<br>
+./a.out<br><br>
 
-
-開啟a123.c
-vi a123.c
+<a href="https://linuxconfig.org/how-to-install-gcc-the-c-compiler-on-ubuntu-18-04-bionic-beaver-linux">How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux</a><br>
 ~~~
-#include <stio.h>
-int main(void)
+$ sudo apt install gcc
+$ sudo apt install build-essential
+~~~
+hello.c
+~~~
+#include <stdio.h>
+int main()
 {
-printf(:a123");
-} 
+   printf("Hello, World!");
+   return 0;
+}
 ~~~
-
+編譯與執行
+~~~
+$ gcc -o hello hello.c 
+$ ./hello 
+~~~
 
 Could not mount the media/drive 'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso' (VERR_PDM_MEDIA_LOCKED).
 
