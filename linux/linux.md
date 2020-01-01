@@ -1,14 +1,14 @@
 ## Ubuntu
 <a id="contents">*</a>
 <h3>目錄</h3>
-<a href="#C1">基本操作</a>
-<a href="#C2">編輯文字檔案</a>
-<a href="#C3">操作範例：輸入文件為a123.c</a>
-<a href="#C100">Q&A</a>
-<a href="#C101">Q&no_A</a>
-===
-<a href="#Complex">Linux 檔案系統架構</a>
-===
+<a href="#C1">基本操作</a><br>
+<a href="#C2">編輯文字檔案</a><br>
+<a href="#C3">操作範例：輸入文件為a123.c</a><br>
+<a href="#C100">Q&A</a><br>
+<a href="#C101">Q&no_A</a><br>
+<br>
+<a href="#Complex">Linux 檔案系統架構</a><br>
+<br>
 <a id="C1"></a>*
 ### 基本操作：sudo 管理者執行
 ~~~
