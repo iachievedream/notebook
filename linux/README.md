@@ -10,7 +10,13 @@
 <br>
 <a href="#Complex">Linux 檔案系統架構</a><br>
 <a href="#install">install</a><br>
+<a href="#Git">--安裝Git</a><br>
+<a href="#Composer">--Composer</a><br>
+<a href="#sublime">--sublime</a><br>
+
+
 <a href="#Apache">Apache</a><br>
+<a href="#docker">docker</a><br>
 <br>
 <br>
 <a id="C1">*</a>
@@ -161,12 +167,13 @@ $ gcc -o hello hello.c
 $ ./hello 
 ~~~
 ===
+
+
 <a href="https://linuxconfig.org/how-to-install-gcc-the-c-compiler-on-ubuntu-18-04-bionic-beaver-linux">How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux</a><br>
 
 Could not mount the media/drive 'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso' (VERR_PDM_MEDIA_LOCKED).
 
 <a href="https://askubuntu.com/questions/321589/unable-to-mount-the-cd-dvd-image-on-the-machine-sandbox">Unable to mount the CD/DVD image on the machine Sandbox</a><br>
-
 ~~~
 sudo mount /dev/sr0 /media/cdrom
 
@@ -219,8 +226,8 @@ VBoxClient: Failed to register support
 /run系統進行服務軟體運作管理處
 
 /srv通常是放置開發的服務（service），如：網站服務 www 等
-<a href="#contents">contents</a>
 ~~~
+<a href="#contents">contents</a>
 
 <a id="install">*</a>
 
@@ -245,18 +252,50 @@ npm -v
 在 Ubuntu Linux 中，也可以透過 apt 來安裝：
 ~~~
 sudo apt-get install nodejs
-
 nodejs -v
 ~~~
 
+### 使用 apt 安裝 curl
+~~~
+sudo apt-get install curl
+~~~
+
+<a id="Git">*</a>
+
+### 安裝Git
+~~~
+sudo apt-get install git
+~~~
+<a id="Composer">*</a>
+
+### 安裝 Composer
+~~~
+sudo apt install composer
+~~~
+
+使用 Composer 管理 PHP 套件
+http://blog.tonycube.com/2016/12/composer-php.html
+Composer 安裝教學-於 Debian/Ubuntu 環境中示範
+https://www.kjnotes.com/devtools/88
+
+
+https://magiclen.org/linux-ssh/
+安裝SSH 讓Linux系統可以被遠端操作
+~~~
+sudo apt-get install ssh
+~~~
+
+<a id="sublime">*</a>
+[Linux] 如何在Ubuntu 下安裝 sublime 2/3 文字編輯器
+~~~
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install sublime-text-installer
+~~~
 <a href="#contents">contents</a>
 
-
 <a id="Apache">*</a>
-
 ### Apache
-
-
 <a href="https://vitux.com/how-to-install-and-configure-apache-web-server-on-ubuntu/">install apache2</a><br>
 ~~~
 sudo apt update
@@ -374,6 +413,9 @@ sudo vi /var/www/html/TP5/app/index/model/User.php
 ~~~
 
 
+<a id="docker">*</a><br>
+
+### docker
 
 docker
 ~~~
@@ -392,8 +434,52 @@ sudo docker run -t -i ubuntu:12.04 /bin/bash
 
 退出
 exit 
-docker images 查看新映像檔
-sudo docker images
+
+~~~
+sudo docker search mysql 搜尋
+sudo docker pull mysql获取镜像
+
+sudo docker images 查看新映像檔
+sudo docker run -it ubuntu /bin/bash (-i: 交互式操作-t: 终端。
+__/bin/bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash。)
+
+docker inspect 取得映像檔的資訊
+docker rmi 刪除
+~~~
+
+範例操作過程
+~~~
+sudo docker ps -a (查看所有的容器命令)
+sudo docker start <容器 ID>
+sudo docker attach 
+sudo docker stop <容器 ID>
+sudo docker restart <容器 ID>
+~~~
+
+运行一个 web 应用
+~~~
+sudo docker pull training/webapp
+__-d:让容器在后台运行。-P:将容器内部使用的网络端口映射到我们使用的主机上。
+sudo docker run -d -P training/webapp python app.py
+sudo docker ps__>PORTS
+__我们也可以通过 -p 参数来设置不一样的端口：
+sudo docker run -d -p 5000:5000 training/webapp python app.py
+
+sudo docker inspect training/webapp 检查 WEB 应用程序
+docker logs -f <容器 ID> 查看 WEB 应用程序日志
+docker rm wizardly_chandrasekhar  移除WEB应用容器
+~~~
+
+~~~
+sudo docker search mysql
+sudo docker pull mysql
+sudo docker run -it mysql /bin/bash
+mysql -h localhost -u root -p
+
+sudo docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql
+~~~
+
+
 
 Docker在容器内运行应用程序。在一个容器内运行一个应用程序需要一个命令: docker run 。
 $ sudo docker run ubuntu:14.04 /bin/echo 'Hello world'
@@ -403,36 +489,51 @@ $ sudo docker run ubuntu:14.04 /bin/echo 'Hello world'
 sudo docker run -t -i ubuntu:12.04 /bin/bash
 /bin/echo 'Hello world'
 ~~~
-
-### 安裝Git
-~~~
-sudo apt-get install git
-~~~
-### 安裝 Composer
-~~~
-sudo apt install composer
-~~~
-
-
-使用 Composer 管理 PHP 套件
-http://blog.tonycube.com/2016/12/composer-php.html
-Composer 安裝教學-於 Debian/Ubuntu 環境中示範
-https://www.kjnotes.com/devtools/88
-
-
-https://magiclen.org/linux-ssh/
-安裝SSH 讓Linux系統可以被遠端操作
-~~~
-sudo apt-get install ssh
-~~~
-
-[Linux] 如何在Ubuntu 下安裝 sublime 2/3 文字編輯器
-
-
-~~~
-sudo add-apt-repository ppa:webupd8team/sublime-text-3
-sudo apt-get update
-sudo apt-get install sublime-text-installer
-~~~
-
 <a href="#contents">contents</a>
+
+
+
+
+
+
+利用 Dockfile、Docker Compose 建立 LAMP 環境 (PHP、Apache、MySQL)
+https://hackmd.io/@titangene/docker-lamp
+~~~
+docker run --name my-php-apache -d -p 8000:80 php:7.1-apache
+>
+--name my-php-apache：設定 container 名稱為 my-php-apache
+-d：container 在背景執行
+-p 8000:80：指定一個 port，host 對外開 8000 port，container 對內開 80 port
+php:7.1-apache：使用 PHP 官方在 Docker Hub 上提供的 7.1-apache tag 的 image
+>
+docker ps
+
+進入 container 新增 index.html
+$ docker exec -it my-php-apache bash
+root@08e5975c8a27:/var/www/html#
+$ echo "<?php phpinfo(); ?>" > index.php
+$ cat index.php
+_<?php phpinfo(); ?>
+exit
+
+~~~
+
+
+
+
+尚未整理
+50％ 簡化！活用 Docker、5 分鐘極速安裝 LAMP
+https://hkitblog.com/50%EF%BC%85-%E7%B0%A1%E5%8C%96%EF%BC%81%E6%B4%BB%E7%94%A8-docker%E3%80%815-%E5%88%86%E9%90%98%E6%A5%B5%E9%80%9F%E5%AE%89%E8%A3%9D-lamp/
+~~~
+docker search lamp
+docker pull dockerfiles/centos-lamp
+docker info
+docker run -d -p 49001:80 dockerfiles/centos-lamp
+docker ps
+>>最後筆者以相同網絡下的電腦瀏覽 113.254.xxx.xxx:49001，然後便可順利進入此頁面，亦即代表了基本上完成設定及安裝。
+
+docker info
+
+注:linode/lamp
+
+~~~
