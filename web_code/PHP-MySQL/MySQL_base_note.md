@@ -105,3 +105,9 @@ DROP TABLE Accounting ;
 ~~~
 SELECT id ,SUM(breakfast+luncht+dinner+Night+traffic) AS totlemoney FROM Accounting GROUP BY id
 ~~~
+
+筆記:稍後整理
+刪除後，自動ＩＤ新增為３之指令：alter table `leave` AUTO_INCREMENT=2;
+~~~
+alter table `leave` AUTO_INCREMENT=２
+~~~
