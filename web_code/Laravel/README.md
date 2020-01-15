@@ -10,6 +10,7 @@ Model 模型 (Eloquent Model)<br>
 Controller新增控制php<br>
 -Message Controller<br>
 View新增視窗php<br>
+
 ===
 
 <a href="https://laravel.com/docs/6.x">Laravel</a>：<br>
