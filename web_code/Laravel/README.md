@@ -1,34 +1,38 @@
-安裝 Laravel
-資料庫設定，MySQL連接
-新增資料表指令(php artisan)
-
-由路(routes/web.php)
-
-M資料庫php檔案安裝
-Model 模型 (Eloquent Model)
--執行
-
-C新增控制php
-Message Controller
-
-V新增視窗php
+安裝 Laravel<br>
+資料庫設定，MySQL連接<br>
+新增資料表指令(php artisan)<br>
+<br>
+由路(routes/web.php)<br>
+<br>
+M資料庫php檔案安裝<br>
+Model 模型 (Eloquent Model)<br>
+-執行<br>
+Controller新增控制php<br>
+-Message Controller<br>
+View新增視窗php<br>
 ===
 
 <a href="https://laravel.com/docs/6.x">Laravel</a>：<br>
 ![image](https://github.com/iachievedream/notebook/blob/master/picture/Laravel/guestbook_Laravel_MVC.png)
 <br>
-<a href="https://github.com/iachievedream/laravel">自己練習專案</a>：<br>
+<a href="https://github.com/iachievedream/laravel_test">自己練習專案</a>：<br>
 <br>
 <br>
 ### 下載安裝
 ~~~
 cd C:\AppServ\www\test
-//
+
 git clone https://github.com/laravel/laravel.git
 
 cd laravel
 
 composer install 
+
+copy .env.example .env
+
+>>MySQL
+
+php artisan key:generate
 
 php artisan serve
 ================================
@@ -40,9 +44,12 @@ composer create-project --prefer-dist laravel/laravel guestbook
 请使用以下命令来创建指定版本的 Laravel 项目
 composer create-project laravel/laravel project-name --prefer-dist "5.5.*"
 
-//測試看看可不可以跑
-cd guestbook
-php artisan serve
+指令說明
+php artisan list
+
+版本確認
+php artisan --version
+
 ~~~
 
 ### 設定資料庫基本資料與MySQL連接
@@ -52,7 +59,12 @@ CREATE DATABASE laravel;
 ~~~
 接下来设置环境文件，赋值一份<br>
 .env.example 并将其重命名为.env：<br>
+~~~
+cp .env.example .env
+copy .env.example .env
+~~~
 运行如下 Artisan 命令生成应用密钥：
+
 ~~~
 php artisan key:generate
 ~~~
@@ -181,11 +193,19 @@ class User extends Authenticatable
 
 ### Todo_Controller
 ~~~
+單一Controller
 php artisan make:controller TodoController
+完整Controller
+php artisan make:controller TodoController --resource
+
 http://127.0.0.1:8000/todo
 
-
 php artisan make:controller MessageController
+
+*Post Model
+
+protected $table = 'posts';
+protected $fillable = ['title','body'];
 ~~~
 
 ### Views
