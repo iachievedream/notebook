@@ -3,7 +3,7 @@
 $conn = mysqli_connect("localhost","root","12345678","schema1");
 mysqli_set_charset($cc,"utf8");
 if (mysqli_connect_errno($conn)) {
- echo mysqli_connect_error();
+	echo mysqli_connect_error();
 }
 // 接收前端傳來的 DataURL 字串
 $imagestring = trim($_REQUEST["imagestring"]);
