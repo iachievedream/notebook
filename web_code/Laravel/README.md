@@ -216,6 +216,13 @@ protected $fillable = ['title','body'];
 php artisan make:policy MessagePolicy
 ~~~
 
+### Middleware
+
+Laravel 自带了一些中间件，包括身份验证、CSRF 保护等。所有的这些中间件都位于 app/Http/Middleware 目录。
+
+~~~
+php artisan make:middleware admincheck
+~~~
 
 上傳:
 ~~~
