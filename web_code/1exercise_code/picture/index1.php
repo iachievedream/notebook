@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<h4>1.</h4>
+<h4>1.hello</h4>
 <!--上傳圖片的按鈕-->
 <input id="file" type="file"/>
 
