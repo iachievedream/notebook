@@ -108,7 +108,7 @@ sudo chmod 777 ××× （每個人都有讀和寫以及執行的權限）
 小寫
 _C大寫
 _M可變寫(依V內的程式大小寫)
-_V小寫(依C與Vg的框架內程式大小寫)
+_V小寫(依C與V的框架內程式大小寫)
 > 控制器需要都小寫英文字母
 
 編輯php資料
@@ -120,14 +120,10 @@ sudo vi /var/www/html/TP5/app/index/model/User.php
 <br>
 ### Q&no-A
 how open is 80-port of linux ?
-
-
-
-
+~~~
 linux開啟port
 
 iptables -A INPUT -p tcp -i eth0 –dport 80 -j ACCEPT
-
 
 iptables -A INPUT -m geoip -p tcp --dport 80 --src--c RU,CN,HK -j DROP
 
@@ -147,4 +143,4 @@ sudo yum install iptables-services iptables
 
 sudo apt install iptables
 sudo apt install iptables-services
-
+~~~

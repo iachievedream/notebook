@@ -7,7 +7,6 @@ sudo composer install
 
 # sudo chmod -R 666 PT5
 
-
 mysql -u root -p
 12345678
 create database mydata;
