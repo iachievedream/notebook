@@ -1,3 +1,29 @@
+## Ubuntu
+<a id="contents">*</a>
+<h3>目錄</h3>
+<a href="#C1">基本操作</a><br>
+<a href="#C2">編輯文字檔案</a><br>
+<a href="#C3">操作範例：輸入文件為a123.c</a><br>
+<br>
+<a href="#C100">Q&A</a><br>
+*How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux
+*Unable to mount the CD/DVD image on the machine Sandbox
+*Extension gd is missing from your system - laravel composer Update
+*解决 VirtualBox里Ubuntu的共享文件夹无法访问 之问题
+<a href="#C101">Q&no_A</a><br>
+*VBoxLinuxAdditions kali
+<br>
+<a href="#Complex">Linux 檔案系統架構</a><br>
+<a href="#install">install</a><br>
+<a href="#Git">--安裝Git</a><br>
+<a href="#Composer">--Composer</a><br>
+<a href="#sublime">--sublime</a><br>
+<br>
+<h3>跳頁筆記資料</h3>
+<a href="https://github.com/iachievedream/notebook/blob/master/linux/Apache.md">Apache</a><br>
+<a href="https://github.com/iachievedream/notebook/blob/master/linux/docker.md">docker</a><br>
+<br>
+<br>
 <a id="C1">*</a>
 
 ### 基本操作：
@@ -117,11 +143,13 @@ gcc -o hello a123.c
 <br>
 <a id="C100">*</a>
 <a href="https://linuxconfig.org/how-to-install-gcc-the-c-compiler-on-ubuntu-18-04-bionic-beaver-linux">How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux</a><br>
+
 ~~~
-$ sudo apt install gcc
-$ sudo apt install build-essential
+sudo apt install gcc
+sudo apt install build-essential
 ~~~
 hello.c
+
 ~~~
 #include <stdio.h>
 int main()
@@ -131,16 +159,14 @@ int main()
 }
 ~~~
 編譯與執行
+
 ~~~
 $ gcc -o hello hello.c 
 $ ./hello 
 ~~~
-
-<a href="https://linuxconfig.org/how-to-install-gcc-the-c-compiler-on-ubuntu-18-04-bionic-beaver-linux">How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux</a><br>
-
+<a href="https://askubuntu.com/questions/321589/unable-to-mount-the-cd-dvd-image-on-the-machine-sandbox">Unable to mount the CD/DVD image on the machine Sandbox</a><br>
 Could not mount the media/drive 'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso' (VERR_PDM_MEDIA_LOCKED).
 
-<a href="https://askubuntu.com/questions/321589/unable-to-mount-the-cd-dvd-image-on-the-machine-sandbox">Unable to mount the CD/DVD image on the machine Sandbox</a><br>
 ~~~
 sudo mount /dev/sr0 /media/cdrom
 
@@ -150,7 +176,6 @@ cd
 sudo ./VBoxLinuxAdditions.run
 sudo sh ./VBoxLinuxAdditions.run
 ~~~
-
 <a href="https://stackoverflow.com/questions/39384644/extension-gd-is-missing-from-your-system-laravel-composer-update">Extension gd is missing from your system - laravel composer Update</a><br>
 
 ~~~
@@ -158,16 +183,14 @@ sudo apt-get install php7.0-gd
 sudo apt-get install php7.0-intl
 sudo apt-get install php7.0-xsl
 ~~~
-
-
 <a href="https://blog.csdn.net/babyfacer/article/details/17123479">解决 VirtualBox里Ubuntu的共享文件夹无法访问 之问题
 </a><br>
+
 ~~~
 sudo usermod -a -G vboxsf darren
 （並用您的用戶名替換“ darren”）
 執行後重新啟動即可共享文件
 ~~~
-
 <a id="C101">*</a>
 ### Q&no_A
 VBoxLinuxAdditions kali<br>
@@ -180,6 +203,7 @@ VBoxClient: Failed to register support
 <a href="http://linux.vbird.org/new_linux.php">鳥哥的 Linux 私房菜</a><br>
 <br>
 <a href="https://blog.techbridge.cc/2017/12/23/linux-commnd-line-tutorial/">Linux 檔案系統架構</a><br>
+
 ~~~
 /bin 主要放置一般使用者可以操作的指令，
 /sbin 放置系統管理員可以操作的指令。連結到 /usr/bin，/usr/sbin
@@ -212,8 +236,6 @@ VBoxClient: Failed to register support
 
 /srv通常是放置開發的服務（service），如：網站服務 www 等
 ~~~
-sh /media/sf_linux/test_sh/appach.sh
-
 <a href="#contents">contents</a>
 
 <a id="install">*</a>
