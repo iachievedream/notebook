@@ -6,9 +6,10 @@
 <a href="#C3">操作範例：輸入文件為a123.c</a><br>
 <br>
 <a href="#C100">Q&A</a><br>
-*How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux
-*Unable to mount the CD/DVD image on the machine Sandbox
-*Extension gd is missing from your system - laravel composer Update
+
+*How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux<br>
+*Unable to mount the CD/DVD image on the machine Sandbox<br>
+*Extension gd is missing from your system - laravel composer Update<br>
 *解决 VirtualBox里Ubuntu的共享文件夹无法访问 之问题
 <a href="#C101">Q&no_A</a><br>
 *VBoxLinuxAdditions kali
