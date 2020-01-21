@@ -11,11 +11,15 @@ sudo composer install
 mysql -u root -p
 12345678
 create database mydata;
-source  mydata.sql
+source  mydata.sql;
 
+# create database mydata;
+# USE mydata;
+# SHOW TABLES;
 
 cd /var/www/html/
-# sudo chmod -R 666 TP5
+mv
+sudo chmod -R 666 TP5
 
 cd /var/www/html/TP5/app/index/model
 sudo nano User.php

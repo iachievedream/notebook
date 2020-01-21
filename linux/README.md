@@ -11,6 +11,7 @@
 *Unable to mount the CD/DVD image on the machine Sandbox<br>
 *Extension gd is missing from your system - laravel composer Update<br>
 *解决 VirtualBox里Ubuntu的共享文件夹无法访问 之问题
+
 <a href="#C101">Q&no_A</a><br>
 *VBoxLinuxAdditions kali
 <br>
@@ -51,13 +52,14 @@ rm examples   //remove file，刪除檔案
 touch test.txt //创建一个文件名為test
 cp test test2 //把test複製一份成test2
 cat index.php //顯示index.php資料
+mv index.html test.html//把index.html 更名成test.html
 ====================================
 操作範例:
 nano README.md
 >>>hello
 >Ctrl + X >>enter
 
-mv index.html test.html//把index.html 更名成test.html
+mv index.html index1.html//把index.html 更名成index1.html
 cp /media/sf_linux/test_sh/appach.sh test.sh
 ======
 先將字串 TEST 存入 README.md 文件中

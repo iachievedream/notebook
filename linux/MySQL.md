@@ -17,10 +17,11 @@ SELECT DATABASE();
 ~~~
 切換使用資料庫 mydata
 ~~~
-USE mydata
+USE mydata;
 ~~~
 列出資料表：SHOW TABLES
 ~~~
+SHOW TABLES;
 SHOW TABLES FROM mydata [LIKE ...];
 ~~~
 列出詳細資料表
