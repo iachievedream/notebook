@@ -1,31 +1,8 @@
-## Ubuntu
-<a id="contents">*</a>
-<h3>目錄</h3>
-<a href="#C1">基本操作</a><br>
-<a href="#C2">編輯文字檔案</a><br>
-<a href="#C3">操作範例：輸入文件為a123.c</a><br>
-<br>
-<a href="#C100">Q&A</a><br>
-<a href="#C101">Q&no_A</a><br>
-<br>
-<a href="#Complex">Linux 檔案系統架構</a><br>
-<a href="#install">install</a><br>
-<a href="#Git">--安裝Git</a><br>
-<a href="#Composer">--Composer</a><br>
-<a href="#sublime">--sublime</a><br>
-<br>
-<h3>跳頁筆記資料</h3>
-<a href="https://github.com/iachievedream/notebook/blob/master/linux/Apache.md">Apache</a><br>
-<a href="https://github.com/iachievedream/notebook/blob/master/linux/docker.md">docker</a><br>
-<br>
-<br>
 <a id="C1">*</a>
 
 ### 基本操作：
-開啟Terminal(終端機):按 ctrl+alt+T<br>
-sudo 管理者執行<br>
-sudo passwd<br>
-
+開啟Terminal，sudo 管理者執行，sudo -i<br>
+(終端機:ctrl+alt+T)，sudo passwd
 ~~~
 cd ~    //移動到家目錄
 cd ..   //移動到上一層目錄
@@ -38,43 +15,36 @@ ls      //列出基本資料夾資料：
 ls -la  // -l 列出詳細資料 -a 列出隱藏資料
 ls *.js // 列出為 .js 的檔案
 ==================
-mkdir test //make directory，創建新資料夾
-rmdir test //刪除空的資料夾
-rm -r newdirectory //刪除內有資料的資料夾
+創建新資料夾，刪除空的資料夾，刪除內有資料的資料夾
+mkdir test   //make directory
+rmdir test
+rm -r newdirectory
+rm examples   //remove file，刪除檔案
 ==================
 touch test.txt //创建一个文件名為test
 cp test test2 //把test複製一份成test2
+cat index.php //顯示index.php資料
 ====================================
 操作範例:
 nano README.md
 >>>hello
 >Ctrl + X >>enter
 
-cat index.php //顯示index.php資料
-rm examples    //remove file，刪除檔案
-
 mv index.html test.html//把index.html 更名成test.html
-
+cp /media/sf_linux/test_sh/appach.sh test.sh
 ======
 先將字串 TEST 存入 README.md 文件中
 echo "TEST" > README.md
 cp README.md
-
-
-复制文件
-使用 touch 在根目录中创建一个文件 oldfile
-touch oldfile
-将其复制到/root/newdirectory
-cp oldfile /root/newdirectory/newfile
 ~~~
 <a href="#contents">contents</a>
-
+<br>
 <a id="C2">*</a>
 
 ### 編輯文字檔案 
 nano：在終端機編輯或是新增文字檔：<br>
 ~~~
- $ nano README.md
+nano README.md
 ~~~
 啟動編輯完後可以使用 Ctrl + X 離開，<br>
 Ctrl + V 移動到上一頁，<br>
@@ -145,7 +115,6 @@ gcc -o hello a123.c
 ~~~
 <a href="#contents">contents</a>
 <br>
-<br>
 <a id="C100">*</a>
 <a href="https://linuxconfig.org/how-to-install-gcc-the-c-compiler-on-ubuntu-18-04-bionic-beaver-linux">How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux</a><br>
 ~~~
@@ -166,8 +135,6 @@ int main()
 $ gcc -o hello hello.c 
 $ ./hello 
 ~~~
-===
-
 
 <a href="https://linuxconfig.org/how-to-install-gcc-the-c-compiler-on-ubuntu-18-04-bionic-beaver-linux">How to install GCC the C compiler on Ubuntu 18.04 Bionic Beaver Linux</a><br>
 
@@ -184,11 +151,29 @@ sudo ./VBoxLinuxAdditions.run
 sudo sh ./VBoxLinuxAdditions.run
 ~~~
 
+<a href="https://stackoverflow.com/questions/39384644/extension-gd-is-missing-from-your-system-laravel-composer-update">Extension gd is missing from your system - laravel composer Update</a><br>
+
+~~~
+sudo apt-get install php7.0-gd
+sudo apt-get install php7.0-intl
+sudo apt-get install php7.0-xsl
+~~~
+
+
+<a href="https://blog.csdn.net/babyfacer/article/details/17123479">解决 VirtualBox里Ubuntu的共享文件夹无法访问 之问题
+</a><br>
+~~~
+sudo usermod -a -G vboxsf darren
+（並用您的用戶名替換“ darren”）
+執行後重新啟動即可共享文件
+~~~
+
 <a id="C101">*</a>
 ### Q&no_A
 VBoxLinuxAdditions kali<br>
 VBoxClient: Failed to register support
 <a href="#contents">contents</a>
+
 <br>
 <a id="Complex">*</a>
 ### Linux 檔案系統架構
@@ -227,6 +212,8 @@ VBoxClient: Failed to register support
 
 /srv通常是放置開發的服務（service），如：網站服務 www 等
 ~~~
+sh /media/sf_linux/test_sh/appach.sh
+
 <a href="#contents">contents</a>
 
 <a id="install">*</a>

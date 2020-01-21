@@ -114,8 +114,26 @@ laravel/database/migrations/2020_01_12_050222_create_messages_table.php
 	  });
 	}
 ==========================
+//列出目前所有 Migration 狀態
+php artisan migrate:status
+
+//執行 Migration
 php artisan migrate
-//執行資料庫指令
+
+//恢復上一版本的 Migration
+php artisan migrate:rollback
+
+//清除所有版本的 Migration
+php artisan migrate:reset
+
+//清除所有版本的 Migration 並重新執行
+php artisan migrate:refresh
+
+//建立資料表
+php artisan make:migration create_users_table --create="userBase"
+
+//異動資料表欄位資料
+php artisan make:migration add_email_to_users_table --table="userBase"
 ~~~
 
 ### 由路(routes/web.php)

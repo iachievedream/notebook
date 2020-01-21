@@ -28,13 +28,13 @@ sudo service jenkins restart
 
 ## Ubuntu 用 APT 安裝 Jenkins
 ~~~
-$ wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 
-$ sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 
-$ sudo apt-get update
+sudo apt-get update
 
-$ sudo apt-get install jenkins
+sudo apt-get install jenkins
 ~~~
 用上面的指令安裝完成之後，Jenkins 就會自動被啟動成服務的模式，因此，之後就可以用下面第一行的 service 指令來啟動、停止或重啟 Jenkins 哩 ! 而 Jenkins 的 Web 管理界面是用 8080 埠，如果要進入 Web 管理界面的話，就用下面第二行的網址來開啟囉 !
 ~~~
@@ -58,6 +58,7 @@ sudo apt-get update
 sudo apt install jenkins
 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
 ~~~
 ====
 

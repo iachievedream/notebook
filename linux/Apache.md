@@ -83,6 +83,9 @@ mkdir(): Permission denied 解决办法
 cd /var/www/html/
 sudo chmod -R 666 your_dir(ex:PT5)
 
+所以一定要有r權限才能開檔案，如果只有x或w是不能開檔案的
+普通的文字檔只要有r權限就可以開檔案，不需要有x權限
+
 ~~~
 修改linux權限命令：chmod
 用法：chmod XXX filename
@@ -117,4 +120,31 @@ sudo vi /var/www/html/TP5/app/index/model/User.php
 <br>
 ### Q&no-A
 how open is 80-port of linux ?
+
+
+
+
+linux開啟port
+
+iptables -A INPUT -p tcp -i eth0 –dport 80 -j ACCEPT
+
+
+iptables -A INPUT -m geoip -p tcp --dport 80 --src--c RU,CN,HK -j DROP
+
+iptables -A INPUT -m tcp --dport 80 -j DROP
+
+
+iptables 
+
+如何使用 iptables
+使用 iptables 前，前先確定你的系統有安裝以下兩個套件。
+
+iptables
+iptables-services
+安裝方式如下：
+
+sudo yum install iptables-services iptables
+
+sudo apt install iptables
+sudo apt install iptables-services
 
