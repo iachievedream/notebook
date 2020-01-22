@@ -6,27 +6,33 @@ Laravel 留言板<br>
 <br>
 安装配置
 首先，从 Github 将项目克隆到本地并进入项目目录：
+
 ~~~
 git clone https://github.com/changeweb/Unifiedtransform.git
 cd Unifiedtransform
 ~~~
 如果是在开发环境，使用下面这个命令安装项目依赖的第三方扩展包：
+
 ~~~
 composer install
 ~~~
 如果是在生产环境，则使用如下命令安装依赖（不安装开发环境依赖的扩展包）：
+
 ~~~
 composer install --no-dev
 ~~~
 接下来设置环境文件，赋值一份 .env.example 并将其重命名为 .env：
+
 ~~~
 cp .env.example .env
 ~~~
 运行如下 Artisan 命令生成应用密钥：
+
 ~~~
 php artisan key:generate
 ~~~
 在本地数据库中创建一个 school 数据库，在 .env 中配置本地数据库环境，然后运行迁移命令创建数据表并通过 Unifiedtransform 提供的填充器初始化数据库数据：
+
 ~~~
 php artisan migrate 
 php artisan db:seed

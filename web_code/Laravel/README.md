@@ -4,14 +4,10 @@
 <br>
 由路(routes/web.php)<br>
 <br>
-M資料庫php檔案安裝<br>
-Model 模型 (Eloquent Model)<br>
--執行<br>
-Controller新增控制php<br>
--Message Controller<br>
-View新增視窗php<br>
-
-===
+Middleware：php artisan make:middleware admincheck<br>
+M：php artisan make:model Todo (Eloquent Model)<br>
+C：php artisan make:controller TodoController<br>
+V新增視窗<br>
 
 <a href="https://laravel.com/docs/6.x">Laravel</a>：<br>
 ![image](https://github.com/iachievedream/notebook/blob/master/picture/Laravel/guestbook_Laravel_MVC.png)
@@ -22,35 +18,26 @@ View新增視窗php<br>
 ### 下載安裝
 ~~~
 cd C:\AppServ\www\test
-
 git clone https://github.com/laravel/laravel.git
-
 cd laravel
-
 composer install 
-
 copy .env.example .env
-
->>MySQL
-
+**set up MySQL of root and password
 php artisan key:generate
-
 php artisan serve
-================================
-other_notebook
-安裝 Laravel<br>
-規則 # composer create-project --prefer-dist [<package>] [<directory>] [<version>]
+================================================================
+other_notebook，安裝 Laravel<br>
+# composer create-project --prefer-dist [<package>] [<directory>] [<version>]
+  composer create-project --prefer-dist laravel/laravel guestbook
+  composer create-project --prefer-dist laravel/laravel guestbook "5.5.*"
 
-composer create-project --prefer-dist laravel/laravel guestbook
 请使用以下命令来创建指定版本的 Laravel 项目
-composer create-project laravel/laravel project-name --prefer-dist "5.5.*"
 
 指令說明
 php artisan list
 
 版本確認
 php artisan --version
-
 ~~~
 
 ### 設定資料庫基本資料與MySQL連接
@@ -207,7 +194,6 @@ class User extends Authenticatable
         return $this->hasMany(Message::class);
     }
 }
-===============
 ~~~
 
 ### Todo_Controller
@@ -242,33 +228,22 @@ Laravel 自带了一些中间件，包括身份验证、CSRF 保护等。所有�
 php artisan make:middleware admincheck
 ~~~
 
+Q&A
+php artisan make:auth <br>
+Command "make:auth" is not defined.
+
+~~~
+composer require laravel/ui --dev
+npm install && npm run dev
+
+php artisan ui vue --auth
+php artisan migrate
+~~~
+
 上傳:
 ~~~
 git add .
 git commit -m "first commit"
 git remote add origin https://github.com/iachievedream/laravel.git
 git push -u origin master
-~~~
-===
-
-Q:<a href="https://stackoverflow.com/questions/31543175/getting-a-500-internal-server-error-on-laravel-5-ubuntu-14-04">Getting a 500 Internal Server Error on Laravel 5+</a><br>
-A:通常，這件事會導致類似的事情。嘗試創建一個文件，然後從中復制所有內容.env.example，將其粘貼到創建的文件中並命名.env。或jsut只需將.env.example文件重命名為.env並運行php artisan key:generate
-cmd:
-~~~
-cd C:\AppServ\www\test\laravel
-move .env.example .env
-php artisan key:generate
-~~~
-
-
-Q&A
-php artisan make:auth 
->>Command "make:auth" is not defined.
-
-~~~
-composer require laravel/ui --dev
-php artisan ui vue --auth
-
-php artisan migrate
-npm install && npm run dev
 ~~~
