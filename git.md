@@ -43,6 +43,11 @@ git log --oneline --graph  <!-- 精簡查詢log -->
 git log --oneline -5       <!-- 最近5次提交記錄 -->
 
 git reflog ：查看所有訊息版本
+
+
+Pull 下載更新
+git fetch與原本檔案是否有差異
+git pull --rebase
 ~~~
 
 git reset — hard and — soft 穿梭你提交的版本之間<br>

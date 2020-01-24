@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+
+<body>
+	<script src="https://cdn.static.runoob.com/libs/jquery/1.8.3/jquery.js"></script>    
+
+<!-- Javascript -->
+<script type="text/javascript">
+   var Ajax = function ()
+    {
+        $.getJSON ("data.json", function (data)
+        {
+            $.each (data, function (i, item)
+            {
+                $ ("#disp").append ("<h3>" + item.name + "</h3>");
+                $ ("#disp").append ("<p>" + item.sex + "</p>");
+				$ ("#disp").append ("<p>" + item.email + "</p>");
+            });
+        });
+    }
+</script>
+</head>
+<body>
+    <input type="button" value="Ajax提交" onclick="Ajax();" />
+    <div id="disp"></div>
+</body>
+</html>

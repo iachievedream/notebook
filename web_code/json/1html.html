@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+
+</head>
+<body>
+	<script src="https://cdn.static.runoob.com/libs/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+    <p>
+        网站名称: <span id="jname"></span><br /> 
+        网站地址: <span id="jurl"></span><br /> 
+        网站 slogan: <span id="jslogan"></span><br /> 
+    </p>
+    <script>
+        var JSONObject= "1data.json";
+
+        $.getJSON (JSONObject, function (data)
+        {
+            $.each (data, function (i, item)
+            {
+                document.getElementById("jname").innerHTML=data.sites[0].name 
+                document.getElementById("jurl").innerHTML=data.sites[0].url 
+                // document.getElementById("jslogan").innerHTML=JSONObject.slogan
+
+            });
+        });
+
+    </script>
+
+</body>
+</html>

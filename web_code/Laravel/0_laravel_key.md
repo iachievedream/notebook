@@ -21,3 +21,6 @@ var_dump($admin);die();
 <td><a class="btn btn-info" href="post/{{$post->id}}/edit" role="button">1qaz</a></td>
 
 @endif
+
+
+php artisan make:middleware admin
