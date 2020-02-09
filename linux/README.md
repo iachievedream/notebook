@@ -254,3 +254,7 @@ sudo apt-get update
 sudo apt-get install sublime-text-installer
 ~~~
 <a href="#contents">contents</a>
+
+
+<a href="https://www.rosehosting.com/blog/how-to-install-php-7-2-on-ubuntu-16-04/">How to Install PHP 7.2 on Ubuntu 16.04
+</a><br>

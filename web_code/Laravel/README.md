@@ -247,3 +247,11 @@ git commit -m "first commit"
 git remote add origin https://github.com/iachievedream/laravel.git
 git push -u origin master
 ~~~
+middleware_auth
+![image](https://github.com/iachievedream/notebook/blob/master/picture/Laravel/laravel_middleware_auth.png)
+~~~
+public function __construct()
+{
+    $this->middleware('auth');
+}
+~~~
