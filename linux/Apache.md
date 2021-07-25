@@ -144,3 +144,17 @@ sudo yum install iptables-services iptables
 sudo apt install iptables
 sudo apt install iptables-services
 ~~~
+
+https://boringpig.github.io/Laravel/%E7%99%BC%E4%BD%88Laravel5-3%E5%88%B0Amazon-EC2-Ubuntu-Serve/
+linux 下 apache啟動、停止、重啟命令
+vhost:
+~~~
+cd /etc/apache2/sites-available/
+~~~
+sudo nano 000-default.conf 
+/etc/init.d/apache2 restart
+
+
+sudo chmod -R 777 storage
+sudo chmod -R 777 bootstrap/cache
+

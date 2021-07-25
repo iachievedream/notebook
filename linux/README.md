@@ -258,3 +258,6 @@ sudo apt-get install sublime-text-installer
 
 <a href="https://www.rosehosting.com/blog/how-to-install-php-7-2-on-ubuntu-16-04/">How to Install PHP 7.2 on Ubuntu 16.04
 </a><br>
+
+檢視隱藏內容的最簡單方法是在檔案瀏覽器開啟時使用Ctrl + h組合鍵。在下圖中，您可以看到現在顯示的所有隱藏內容：
+

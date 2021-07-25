@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style>
+        body {
+            background-color: lightblue;
+            /* background-image: url("paper.gif"); */
+            background-repeat: repeat-x;
+            /*在X軸重複 */
+            /* background-repeat: no-repeat;不重複 */
+            background-position: right top;
+            background-attachment: fixed;
+
+            div.ex1 {
+                width: 500px;
+                margin: auto;
+                border: 3px solid #73AD21;
+            }
+
+            background: #ffffff;
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+
+            background: #ffffff url("img_tree.png") no-repeat right top;
+
+
+        }
+
+        #id1 {
+            /* id */
+            text-align: center;
+            color: red;
+        }
+
+        .center {
+            /* class */
+            background-color: lightblue;
+
+        }
+
+        p.center {
+            /* p class=center */
+            font-family: verdana;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a paragraph.</p>
+    <p id="id1">Hello World!</p>
+    <h1 class="center">Red and center-aligned heading</h1>
+
+    <h1 style="color:blue;text-align:center;">This is a heading</h1>
+    <h1 style="background-color:DodgerBlue;">Hello World</h1>
+    <h1 style="color:Tomato;">Hello World</h1>
+    <!-- 文字邊框 -->
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+
+
+</body>
+
+</html>
